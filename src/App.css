@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap');
+
+@font-face {
+  font-family: 'Herokid';
+  src: url('./fonts/Herokid-Regular.otf') format('opentype');
+}
+
+#heading {
+  font-family: 'Herokid', sans-serif;
+}
+/* *{
+  font-family: 'Poppins', sans-serif;
+} */
+
+/* .App {
+  text-align: center; 
+  height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  background-color: #FFF1DF;
+} */
+
+.container-two{
+  height: 40%;
+  width: 100%;
+}
+.half-container{
+  background-color: #FFF1DF;
+}
+
+/* .meow, .nav-menu,.sub-nav-menu{
+  display: flex;
+  flex-direction: row;
+} */
+
+.moving-millions img{
+  max-width: 90%;
+}
+
+.taxi-image{
+  align-self: flex-start;
+  width: 100%;
+  margin-top: -5vh;
+}
+
+.taxi-image img{
+  max-width: 90%;
+}
+.build-from-mumbai{
+  width: 33.33%;
+}
+
+.build-from-mumbai p{
+  max-width: 90%;
+}
+
+#heading{
+  font-size: 4vw;
+  line-height: 10vh;
+}
+
+#sub-heading{
+  font-size: 2vw;
+  font-family: 'Herokid',sans-serif;
+}
+
+
+@media (orientation: portrait) {
+  .everything-container h1{
+    font-size: 7vw;
+    line-height: 9vh;
+  }
+
+  .everything-will-be-revealed-soon{
+    margin-top: 40vw;
+  }
+  .App{
+    background-color:#FFF1DF ;
+  }
+
+  /* .meow{
+    flex-direction: column;
+  } */
+
+  .moving-millions, .taxi-image{
+    align-self: center;
+  }
+  
+  .moving-millions img{
+    align-self: center;
+    max-height: 120%;
+    max-width: 150%;
+    
+  }
+  .taxi-image img{
+    align-self: center;
+    max-height: 190%;
+    max-width: 190%;
+    
+  }
+
+  #heading{
+    line-height: 4vw;
+  }
+
+  #sub-heading{
+    font-size: 4vw;
+  }
+
+  .build-from-mumbai{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+  
+  }
+
+  .build-from-mumbai p{
+    max-width: 150%;
+    font-size: 5vw;
+  }
+
+}
+
+@media (max-width: 396px) { 
+  .build-from-mumbai{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+  
+  }
+
+  #heading{
+    align-self: center;
+    align-items: center;
+    text-align: center;
+    max-width: 150%;
+    font-size: 6vw;
+    line-height: 7vw;
+    
+  }
+
+  #sub-heading{
+    align-self: center;
+    align-items: center;
+    text-align: center;
+    max-width: 150%;
+    font-size: 6vw;
+  }
+  
+  
+}
+
+/* 
+.apply-element{
+  font-family: 'Herokid',sans-serif;
+}
+
+#sub-text{
+  font-family: 'Herokid',sans-serif;
+  font-size: 1.5vw;
+  padding-top: 0%;
+  margin-top: 0%;
+}
+
+#main-text{
+  font-family: 'Herokid',sans-serif;
+  font-size: 2vw;
+  margin-bottom: 0%;
+} */
+
+.main-apply-btn{
+  color: #000000;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  background-color: #F89D21;
+}
+
+button{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+
+.web-view-links {
+  display: flex;
+  align-self: flex-end;
+}
+
+.nav-button{
+  border-radius: 20px;
+  border: none;
+  width: 15vw;
+  font-size: 20px;
+  padding: 10px;
+  font-weight: 700;
+  text-align: center;
+  justify-content: center;
+}
+
+.sponsor-button{
+  color: #FFF1DF;
+  font-family: 'Poppins', sans-serif;
+  margin-left: 5vw;
+  background-color: #313131;
+}
+
+.mentor-button{
+  color: #000000;
+  font-family: 'Poppins', sans-serif;
+  background-color: #F89D21;
+}
+
+.color-moldy{
+  background-color: #094B14;
+}
+
+.text-color-moldy{
+  color: #094B14;
+}
+
+.color-peachy{
+  background-color: #FFF1DF;
+}
+
+.color-purple{
+  background-color: #7855A3;
+}
+
+.text-color-purple{
+  color: #A775E8;
+}
+
+.text-color-peachish{
+  color: #FFF1DF;
+}
+
+.font-poppins{
+  font-family: 'Poppins', sans-serif;
+}
+
+.font-Herokid{
+  font-family: 'Herokid';
+}
+
+.color-mustard{
+  background-color: #F89D21;
+}
