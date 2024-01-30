@@ -2,20 +2,18 @@ import React, { useState, useEffect } from "react";
 import faqtext from "../assets/faqs.png";
 
 const answers = [   
-    "I am the 1st answer",
-    "I am the 2nd answer", 
-    "I am the 3rd answer", 
-    "I am the 4th answer", 
-    "I am the 5th answer", 
-    "I am the 6th answer", 
-    "I am the 7th answer"
+    "Ethereum hackathon in MUMBAI",        
+    "Anyone and everyone (over 18 years of age) interested in building the Ethereum ecosystem and creating apps for web3 adoption are welcomed.",
+    "ETHMumbai is an in-person hackathon happening in Mumbai during 29th - 31st March 2024.",
+    "Yes, you can participate either as an individual or a team of up to 4.",
+    "This hackathon is completely free of cost for hackers, thanks to our sponsors, and includes meals, snacks, and a resting area during all 3 days.",
+    "You should bring all important things for a convenient travel and hacking experience including a valid government-issued ID, water bottle, laptop, chargers, power bank, and clothes.",
+    "Travel and any other expenses outside the hackathon are not covered."
 ];
-
 
 function FAQS() {
     return(
         <div className="
-        border-2 border-black
         ">
             <img src={faqtext} alt="FAQS" className="ml-4 h-8" />
             <div className="flex flex-col mb-4 pt-10">
