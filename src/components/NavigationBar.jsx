@@ -12,7 +12,6 @@ function NavigationBar() {
         setMenuOpen(!isMenuOpen);
     };
 
-    // const navigate = useNavigate();
 
     return (
         <div className="navigation-menu">
@@ -24,14 +23,16 @@ function NavigationBar() {
                 <div style={{ display: 'flex', flexDirection: 'row', justifyContent:'center',alignSelf:'center',paddingLeft:'1vw',alignItems:'center' }}>
                     <button
                     onClick={() => {
-                        window.location.assign('mailto:sponsor@ethmumbai.in');
-                      }}  style={{marginRight:'1vw',cursor:'pointer'}} className="web-view-links nav-button sponsor-button">Sponsor It</button>
-                    <button 
+                        window.open('https://app.deform.cc/form/8eb56bad-1bd4-43e4-9599-cf1946803c45', '_blank');
+                      }}  style={{marginRight:'1vw',cursor:'pointer'}} 
+                      className="web-view-links nav-button sponsor-button">Become a Sponsor</button>
+                   
+                    {/* <button 
                     style={{cursor:'pointer'}}
                     onClick={() => {
                         window.location.assign('https://app.deform.cc/form/136a7409-6df6-4a66-bc91-e4f2d884b0da/');
                       }}
-                    className="web-view-links nav-button mentor-button">Apply to Mentor</button>
+                    className="web-view-links nav-button mentor-button">Apply to Mentor</button> */}
                 </div>
             </div>
             <div className="middle-logo" style={{width:'100%',height:"100%",justifyContent:'center'}}>

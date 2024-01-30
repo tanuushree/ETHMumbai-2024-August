@@ -21,7 +21,8 @@ const ScheduleDropDown = () => {
         <div className="mb-4 p-8 rounded-3xl color-purple flex-wrap text-color-peachish">
         <div className="p-2 flex flex-row justify-between">
             <img className="pl-1 pt-2 h-1/2 w-1/4" alt="Schedule" src={Schedule}></img>
-            <button id="lilb" className="text-white font-bold" onClick={handleButtonClick}>+</button>
+            {/* <button id="lilb" className="text-white font-bold" onClick={handleButtonClick}>+</button> */}
+            <button id="temporary-button" className="text-white font-bold">TBA</button>
         </div>
         <p className="flex-1 p-2 ml-1 text-left font-Herokid">What, when, & where!</p>
         {isScheduleVisible && <ScheduleContents />}

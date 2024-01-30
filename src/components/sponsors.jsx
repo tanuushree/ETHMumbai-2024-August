@@ -7,6 +7,12 @@ import Partners from "../assets/partners.png";
 
 
 function Sponsors() {
+
+    const handleButtonClick = () => {
+        const linkToOpen = 'https://app.deform.cc/form/8eb56bad-1bd4-43e4-9599-cf1946803c45';
+        window.open(linkToOpen, '_blank');
+      };
+
     return(
         <div className="mt-20 mb-20 p-8 
         self-center w-full 
@@ -24,7 +30,7 @@ function Sponsors() {
             <img src={logo4} alt="name" className="place-self-center p-2 h-1/5 w-1/4" />
         </div>
         <button className="color-peachy p-2 rounded-full shadow-md text-color-moldy
-         text-2xl m-4 pr-40 pl-40 mb-8 font-bold"> Become a Sponsor </button>
+         text-2xl m-4 pr-40 pl-40 mb-8 font-bold" onClick={handleButtonClick}> Become a Sponsor </button>
         </div>
     )
 }

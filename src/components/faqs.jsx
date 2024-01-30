@@ -1,8 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import faqtext from "../assets/faqs.png";
 
 const answers = [   
-    "Ethereum hackathon in MUMBAI",        
     "Anyone and everyone (over 18 years of age) interested in building the Ethereum ecosystem and creating apps for web3 adoption are welcomed.",
     "ETHMumbai is an in-person hackathon happening in Mumbai during 29th - 31st March 2024.",
     "Yes, you can participate either as an individual or a team of up to 4.",
@@ -13,17 +12,15 @@ const answers = [
 
 function FAQS() {
     return(
-        <div className="
-        ">
+        <div className="">
             <img src={faqtext} alt="FAQS" className="ml-4 h-8" />
             <div className="flex flex-col mb-4 pt-10">
-            <FaqComponent question="What is ETH Mumbai?" customKey="0"/>
-            <FaqComponent question="Who can participate?" customKey="1" />
-            <FaqComponent question="When and where is the hackathon happening?" customKey="2" />
-            <FaqComponent question="Can we apply as a team?" customKey="3" />
-            <FaqComponent question="How much does it cost?" customKey="4" />
-            <FaqComponent question="Once I’m accepted, what should I bring?" customKey="5" />
-            <FaqComponent question="Is there travel reimbursement for hackers?" customKey="6" />
+            <FaqComponent question="Who can participate?" customKey="0" />
+            <FaqComponent question="When and where is the hackathon happening?" customKey="1" />
+            <FaqComponent question="Can we apply as a team?" customKey="2" />
+            <FaqComponent question="How much does it cost?" customKey="3" />
+            <FaqComponent question="Once I’m accepted, what should I bring?" customKey="4" />
+            <FaqComponent question="Is there travel reimbursement for hackers?" customKey="5" />
         </div>
         </div>
        
@@ -35,16 +32,14 @@ export default FAQS;
 const FaqComponent = ({ question, customKey }) => {
     const [isButtonClicked, setIsButtonClicked] = useState(() => {
       let initialMap = new Map();
-      for (let i = 0; i <= 6; i++) {
+
+      for (let i = 0; i < 6; i++) {
         initialMap.set(i.toString(), false);
       }
       return initialMap;
     });
   
     const numKey = parseInt(customKey, 10);
-  
-    console.log(" customKey is - ", customKey, typeof customKey);
-    console.log("isButtonClicked is", isButtonClicked);
   
     const handleButtonClick = () => {
       console.log(" hi i was clicked for ", customKey, numKey);

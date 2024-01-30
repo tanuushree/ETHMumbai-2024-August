@@ -26,8 +26,9 @@ const SpeakerComponent = () => {
     return(
         <div className="flex flex-col self-center">
         <div className="border-2 border-black rounded-full bg-amber-600 h-40 w-40"></div>
-        <p className="pt-4 font-Herokid"> Speaker Name </p>
-        <p className="pb-4 font-extralight text-zinc-700 text-sm"> Speaker Creds </p>
+        <p className="pt-4 font-Herokid"> TBA </p>
+        {/* TODO: Add this when speaker details are provided */}
+        {/* <p className="pb-4 font-extralight text-zinc-700 text-sm"> Speaker Creds </p> */}
         </div>
     )
 }
