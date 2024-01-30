@@ -1,7 +1,5 @@
 import React from "react";
 import First from "../components/first";
-import Second from "../components/second";
-import Footer from "../components/footer";
 import Apply from "../components/apply";
 import VideoEmbed from "../components/videoComponent";
 import Sponsors from "../components/sponsors";
