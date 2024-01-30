@@ -1,7 +1,37 @@
 import React from "react";
+import { useState, useEffect  } from "react";
 import Schedule from "../assets/sch.png";
 
 const ScheduleDropDown = () => {
+
+    const [isScheduleVisible, setIsScheduleVisible] = useState(false);
+    useEffect(() => {
+        const smallButton = document.getElementById('lilb');
+        
+        if (smallButton) {
+          smallButton.textContent = isScheduleVisible ? '-' : '+';
+        }
+      }, [isScheduleVisible]);
+
+    const handleButtonClick = () => {
+        setIsScheduleVisible(!isScheduleVisible);
+    };
+
+    return(
+        <div className="mb-4 p-8 rounded-3xl color-purple flex-wrap text-color-peachish">
+        <div className="p-2 flex flex-row justify-between">
+            <img className="pl-1 pt-2 h-1/2 w-1/4" alt="Schedule" src={Schedule}></img>
+            <button id="lilb" className="text-white font-bold" onClick={handleButtonClick}>+</button>
+        </div>
+        <p className="flex-1 p-2 ml-1 text-left font-Herokid">What, when, & where!</p>
+        {isScheduleVisible && <ScheduleContents />}
+        </div>
+    )
+}
+
+export default ScheduleDropDown;
+
+const ScheduleContents = () => {
 
     const gosomewhere = () => {
         const twitterURL = "https://twitter.com/ethmumbai";
@@ -9,13 +39,6 @@ const ScheduleDropDown = () => {
     }
 
     return(
-        <div className="mb-4 p-8 rounded-3xl flex flex-col color-purple flex-wrap text-color-peachish">
-        <div className="flex flex-col h-48">
-            <img className="pl-2 pt-2 h-1/2 w-1/4" alt="Schedule" src={Schedule}></img>
-            {/* <button className="">+</button> */}
-            <p className="pl-2 pt-0 text-left font-Herokid">What, when, & where!
-            </p>
-        </div>
         <div>
             <div className="p-4 flex flex-row text-color-peachish justify-between">
                 <div className="p-2 flex flex-col">
@@ -92,8 +115,5 @@ const ScheduleDropDown = () => {
             p-2 rounded-full text-black w-full shadow-lg hover:shadow-xl
             text-2xl m-4 pr-40 pl-40 mb-8 font-bold"> Grab your tickets </button>
         </div>
-        </div>
     )
 }
-
-export default ScheduleDropDown;
