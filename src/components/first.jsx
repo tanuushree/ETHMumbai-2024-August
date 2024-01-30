@@ -1,8 +1,9 @@
 import React from "react";
 import NavigationBar from "./NavigationBar";
 import Car from "../assets/logo_11.png";
-import Frame6 from '../assets/Frame 6.png';
-import MainLogo from "../assets/main-logo.png"
+import MainLogo from "../assets/main-logo.png";
+import LogoTop from "../assets/buildfrom.png";
+import LogoBottom from "../assets/mumbai.png";
 
 function First() {
 
@@ -10,7 +11,9 @@ function First() {
         <div className="mt-12 justify-center text-center color-peachy">
            <div className="flex flex-row justify-between">
             <div className="flex flex-col text-left ">
-            <img src={MainLogo} alt="Bild from mumbai" className="pt-32 h-2/3 w-full"/>
+            <img src={LogoTop} alt="Bild from" className="pt-32  w-full"/>
+            <img src={LogoBottom} alt="mumbai" className="w-full"/>
+           
             <p id="heading" className="text-xl">for the world.</p>
             <p id="sub-heading" className="pt-0">29th — 31st March 2024</p>
             </div>
