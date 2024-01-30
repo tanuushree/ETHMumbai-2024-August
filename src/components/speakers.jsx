@@ -3,7 +3,7 @@ import SpeakersText from "../assets/speakers.png";
 
 function Speakers() {
     return(
-        <div className="mt-20 p-4 flex flex-col justify-center 
+        <div className="mt-20 p-4 mb-20 flex flex-col justify-center 
         ">
         <img src={SpeakersText} alt="Speakers" className="mx-auto block h-1/5 w-1/5" />
         <p className="font-Herokid">We've asked them to not be boring.</p>
