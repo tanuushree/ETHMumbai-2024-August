@@ -6,7 +6,7 @@ import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 function Socials() {
 
     const xURL = "https://twitter.com/ethmumbai";
-    const telegramURL = "https://t.me/+j4CUC9R3j4BmMDE1";
+    const telegramURL = "https://t.me/ethmumbai";
 
     const handletwitterbutton = () => {
         window.open(xURL, '_blank');

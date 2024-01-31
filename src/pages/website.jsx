@@ -7,9 +7,11 @@ import ScheduleDropDown from "../components/schedule";
 import Speakers from "../components/speakers";
 import FAQS from "../components/faqs";
 import NavigationBar from "../components/NavigationBar";
+import BottomBox from "../components/bottomBox";
 
 function Website() {
     return(
+        <div className="color-peachy">
         <div className="pt-1 pr-16 pl-16 color-peachy text-center self-center">
            <NavigationBar/>
             <First/>
@@ -20,8 +22,11 @@ function Website() {
             <Speakers/>
             <FAQS/>
         </div>
+            <div className="color-peachy">
+            <BottomBox />
+            </div>
+        </div>
     )
-    
 }
 
 export default Website;
