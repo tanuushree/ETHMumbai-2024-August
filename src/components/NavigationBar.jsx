@@ -4,6 +4,7 @@ import "../stylesheets/NavStyle.css";
 import { IoIosMenu } from "react-icons/io";
 import { IoCloseSharp } from "react-icons/io5";
 import ETHMumbaiLogo from "../assets/Logo.png";
+import Socials from "./socials";
 
 function NavigationBar() {
     const [isMenuOpen, setMenuOpen] = useState(false);
@@ -20,21 +21,23 @@ function NavigationBar() {
                 <div style={{width:'50%',height:'100%',textAlign:'center',display:'flex',flexDirection:'row'}}>
                 <img src={ETHMumbaiLogo} alt="ETHMumbai Logo" style={{ maxWidth: '100%', maxHeight: '100%',alignSelf:'flex-start' }} />
                 </div>
-                <div style={{ display: 'flex', flexDirection: 'row', justifyContent:'center',alignSelf:'center',paddingLeft:'1vw',alignItems:'center' }}>
+                <div style={{ display: 'flex', flexDirection: 'row', justifyContent:'center',alignSelf:'center',paddingLeft:'10vw',alignItems:'center' }}>
                     <button
                     onClick={() => {
                         window.open('https://app.deform.cc/form/8eb56bad-1bd4-43e4-9599-cf1946803c45', '_blank');
                       }}  style={{marginRight:'1vw',cursor:'pointer'}} 
-                      className="web-view-links nav-button sponsor-button">Become a Sponsor</button>
-                   
-                    {/* <button 
-                    style={{cursor:'pointer'}}
-                    onClick={() => {
-                        window.location.assign('https://app.deform.cc/form/136a7409-6df6-4a66-bc91-e4f2d884b0da/');
-                      }}
-                    className="web-view-links nav-button mentor-button">Apply to Mentor</button> */}
+                      className="web-view-links flex-1
+                      color-mustard text-black p-6
+                      font-bold mr-8 place-content-center
+                      m-4 pt-4 pb-4 rounded-full shadow-md hover:shadow-xl
+                      self-center text-xl
+                      ">Become a Sponsor</button>
+                  <div className="p-4"> 
+                   <Socials />
+                  </div>
                 </div>
             </div>
+
             <div className="middle-logo" style={{width:'100%',height:"100%",justifyContent:'center'}}>
                 <img  src={ETHMumbaiLogo} alt="ETHMumbai Logo" style={{ maxWidth: '120%', maxHeight: '100%',alignSelf:'flex-start' }} />
             </div>

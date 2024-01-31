@@ -1,5 +1,4 @@
 import React from "react";
-import MainVideo from "../assets/ETHMumbai.mp4";
 
 function VideoEmbed() {
 
