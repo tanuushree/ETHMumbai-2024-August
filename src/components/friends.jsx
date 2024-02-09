@@ -1,8 +1,8 @@
 import React from "react";
 import logo1 from "../assets/friends/ETHBarcelona.png";
 import logo2 from "../assets/friends/ETHBelgrade.png";
-import logo3 from "../assets/friends/ethchicago.png";
-import logo4 from "../assets/friends/ethrome_logo.png";
+import logo3 from "../assets/friends/ETHchicago (1).png";
+import logo4 from "../assets/friends/ETHrome.png";
 
 import FriendsText from "../assets/friends.png";
 
