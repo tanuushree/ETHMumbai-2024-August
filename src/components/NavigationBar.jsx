@@ -42,7 +42,7 @@ items-center justify-center
       }}
       style={{ cursor: 'pointer' }}
       className="web-view-links 
-      bg-black text-color-mustard p-6 
+      color-mustard text-black p-6 
       font-bold place-content-center m-4 pt-4 pb-4 rounded-full shadow-md hover:shadow-xl self-center text-xl"
     >
       Become a Sponsor
