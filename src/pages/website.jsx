@@ -8,6 +8,7 @@ import Speakers from "../components/speakers";
 import FAQS from "../components/faqs";
 import NavigationBar from "../components/NavigationBar";
 import BottomBox from "../components/bottomBox";
+import Friends from "../components/friends";
 
 function Website() {
     return(
@@ -20,6 +21,7 @@ function Website() {
             <Sponsors />
             <ScheduleDropDown/>
             <Speakers/>
+            <Friends />
             <FAQS/>
         </div>
             <div className="color-peachy">

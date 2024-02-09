@@ -6,8 +6,7 @@ function Speakers() {
         <div className="mt-20 p-4 mb-20 flex flex-col justify-center 
         ">
         <img src={SpeakersText} alt="Speakers" className="mx-auto block h-1/5 w-1/5" />
-        <p className="font-Herokid">We've asked them to not be boring.</p>
-        <p className="mb-8 font-Herokid">That's all we can promise.</p>
+        <p className="font-Herokid">Attend ETHMumbai with the Brightest of Minds.</p>
         <div className="mr-16 ml-16 mt-4 p-2 flex flex-row flex-wrap justify-between">
              {/* TODO: pass speaker details as prop when speakers
              are added in the google drive */}
