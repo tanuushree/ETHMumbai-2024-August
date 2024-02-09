@@ -15,27 +15,58 @@ function NavigationBar() {
 
 
     return (
-        <div className="navigation-menu">
+    <div className="navigation-menu">
             
-            <div className="web-view" style={{width:'100%'}}>
-                <div style={{width:'50%',height:'100%',textAlign:'center',display:'flex',flexDirection:'row'}}>
-                <img src={ETHMumbaiLogo} alt="ETHMumbai Logo" style={{ maxWidth: '100%', maxHeight: '100%',alignSelf:'flex-start' }} />
-                </div>
-                <div style={{ display: 'flex', flexDirection: 'row', justifyContent:'center',alignSelf:'center',paddingLeft:'10vw',alignItems:'center' }}>
-                    <button
-                    onClick={() => {
-                        window.open('https://app.deform.cc/form/8eb56bad-1bd4-43e4-9599-cf1946803c45', '_blank');
-                      }}  style={{marginRight:'1vw',cursor:'pointer'}} 
-                      className="web-view-links flex-1
-                      color-mustard text-black p-6
-                      font-bold mr-8 place-content-center
-                      m-4 pt-4 pb-4 rounded-full shadow-md hover:shadow-xl
-                      self-center text-xl
-                      ">Become a Sponsor</button>
-                  <div className="p-4"> 
-                   <Socials />
-                  </div>
-                </div>
+    <div className="web-view" style={{width:'100%'}}>
+        <div style={{width:'60%',height:'100%',textAlign:'center',display:'flex',flexDirection:'row'}}>
+            <img src={ETHMumbaiLogo} alt="ETHMumbai Logo" style={{ maxWidth: '100%', maxHeight: '100%',alignSelf:'flex-start' }} />
+        </div>
+  <div className="flex flex-row 
+items-center justify-center
+  w-full mr-4
+  ">
+  <div className="flex flex-row h-full">
+  <button
+      onClick={() => {
+        window.open('https://app.deform.cc/form/8eb56bad-1bd4-43e4-9599-cf1946803c45', '_blank');
+      }}
+      style={{ cursor: 'pointer' }}
+      className="web-view-links  color-mustard text-black
+      p-6 font-bold place-content-center m-4 pt-4 pb-4 rounded-full shadow-md hover:shadow-xl self-center text-xl"
+    >
+      Become a Speaker
+    </button>
+    <button
+      onClick={() => {
+        window.open('https://app.deform.cc/form/8eb56bad-1bd4-43e4-9599-cf1946803c45', '_blank');
+      }}
+      style={{ cursor: 'pointer' }}
+      className="web-view-links 
+      bg-black text-color-mustard p-6 
+      font-bold place-content-center m-4 pt-4 pb-4 rounded-full shadow-md hover:shadow-xl self-center text-xl"
+    >
+      Become a Sponsor
+    </button>
+  </div>
+  {/* <div className="flex-1 h-full">
+    <button
+      onClick={() => {
+        window.open('https://app.deform.cc/form/8eb56bad-1bd4-43e4-9599-cf1946803c45', '_blank');
+      }}
+      style={{ cursor: 'pointer' }}
+      className="web-view-links  color-mustard text-black
+      p-6 font-bold place-content-center m-4 pt-4 pb-4 rounded-full shadow-md hover:shadow-xl self-center text-xl"
+    >
+      Become a Speaker
+    </button>
+  </div> */}
+  <div className="flex items-center">
+    <div className="ml-2"> 
+      <Socials />
+    </div>
+  </div>
+</div>
+
             </div>
 
             <div className="middle-logo" style={{width:'100%',height:"100%",justifyContent:'center'}}>
