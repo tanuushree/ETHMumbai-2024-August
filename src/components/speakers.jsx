@@ -5,9 +5,11 @@ function Speakers() {
     return(
         <div className="mt-20 p-4 mb-20 flex flex-col justify-center 
         ">
-        <img src={SpeakersText} alt="Speakers" className="mx-auto block h-1/5 w-1/5" />
+        <img src={SpeakersText} alt="Speakers" className="mx-auto block h-4/5 md:h-1/5 md:w-1/5" />
         <p className="font-Herokid">Attend ETHMumbai with the Brightest of Minds.</p>
-        <div className="mr-16 ml-16 mt-4 p-2 flex flex-row flex-wrap justify-between">
+        <div className="pt-10 px-6
+        sm:mr-16 sm:ml-16 sm:mt-4 sm:p-2
+        flex flex-row flex-wrap justify-between">
              {/* TODO: pass speaker details as prop when speakers
              are added in the google drive */}
             <SpeakerComponent />

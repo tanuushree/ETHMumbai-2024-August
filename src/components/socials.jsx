@@ -17,18 +17,25 @@ function Socials() {
     }
 
     return(
-        <div className="space-x-8">   
-         <button id="twitter" 
-         className="bg-black border-2 w-12 h-12 
-         rounded-2xl text-color-mustard 
-         border-black hover:shadow-xl text-2xl"
-         onClick={handletwitterbutton}>
-        <FontAwesomeIcon icon={faXTwitter} />
+        <div className="space-x-4 sm:space-x-8">   
+<button id="twitter" 
+        className="bg-black border-2 w-6 h-6 
+        sm:w-12 sm:h-12 
+        text-sm sm:text-xl
+        rounded-md sm:rounded-2xl
+        text-color-mustard 
+        border-black hover:shadow-xl "
+        onClick={handletwitterbutton}>
+        <FontAwesomeIcon icon={faXTwitter}  />
         </button>
+
         <button id="telegram" 
-         className="bg-black border-2 w-12 h-12 
-         rounded-2xl text-color-mustard 
-         border-black hover:shadow-xl text-2xl"
+      className="bg-black border-2 w-6 h-6 
+      sm:w-12 sm:h-12 
+      text-sm sm:text-xl
+      rounded-md sm:rounded-2xl
+      text-color-mustard 
+      border-black hover:shadow-xl "    
          onClick={handletelegrambutton}>
         {/* <FontAwesomeIcon icon={faTelegramPlane} /> */}
         <FontAwesomeIcon icon={faPaperPlane} />

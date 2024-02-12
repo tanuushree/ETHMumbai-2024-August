@@ -53,7 +53,7 @@ const FaqComponent = ({ question, customKey }) => {
     };
   
     return (
-      <div className="p-4 mr-8 ml-8 mb-2 mt-2 flex-1 bg-white text-left rounded-lg">
+      <div className="p-4 mx-2 sm:mx-8 my-2 flex-1 bg-white text-left rounded-lg">
         <div className="flex flex-row justify-between">
         <div className="font-Herokid">{question}</div>
         <button id="cuteb" className="text-black font-bold" onClick={handleButtonClick}>

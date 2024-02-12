@@ -15,8 +15,7 @@ function NavigationBar() {
 
 
     return (
-    <div className="navigation-menu">
-            
+    <div className="navigation-menu sm:border-0 sm:border-black sm:rounded-full">
     <div className="web-view" style={{width:'100%'}}>
         <div style={{width:'60%',height:'100%',textAlign:'center',display:'flex',flexDirection:'row'}}>
             <img src={ETHMumbaiLogo} alt="ETHMumbai Logo" style={{ maxWidth: '100%', maxHeight: '100%',alignSelf:'flex-start' }} />
@@ -69,44 +68,52 @@ items-center justify-center
 
             </div>
 
-            <div className="middle-logo" style={{width:'100%',height:"100%",justifyContent:'center'}}>
-                <img  src={ETHMumbaiLogo} alt="ETHMumbai Logo" style={{ maxWidth: '120%', maxHeight: '100%',alignSelf:'flex-start' }} />
-            </div>
+<div className="middle-logo" style={{height:"100%",justifyContent:'center'}}>
+    <img  src={ETHMumbaiLogo} alt="ETHMumbai Logo" style={{ maxWidth: '120%', maxHeight: '100%',alignSelf:'flex-start' }} />
+</div>
             
 
-            <div className="mobile-view" style={{backgroundColor:!isMenuOpen?'transparent':''}}>
-                <div style={{height:'10%',width:'100%',paddingTop:'6px'}}>
-                    {isMenuOpen ? (
-                        <IoCloseSharp style={{ transform: 'scale(2)',color:'white' }} onClick={toggleMenu} />
-                    ) : (
-                        <IoIosMenu style={{ transform: 'scale(2)',color:'brown' }} onClick={toggleMenu} />
-                    )}
-                </div>
-                <div style={{height:'70%',width:"100%",display:"flex",flexDirection:'column'}}>
-                {isMenuOpen && (
-                    <>
-                        <button
-                            onClick={() => {
-                                window.location.assign('mailto:sponsor@ethmumbai.in');
-                              }}
-                            style={{cursor:'pointer'}}
-                        
-                        className="mobile-navbar-button">SPONSOR IT {'>>'} </button>
-                        {/* <hr style={{width:"100%",height:'10px'}}></hr> */}
-                        <button 
-                        style={{cursor:'pointer'}}
-                        onClick={() => {
-                            window.location.assign('https://app.deform.cc/form/136a7409-6df6-4a66-bc91-e4f2d884b0da/');
-                          }}
-                        className="mobile-navbar-button">APPLY TO MENTOR {'>>'}</button>
-                        {/* <hr style={{width:"100%",height:'10px'}}></hr> */}
-                    </>
-                )}
+  <div className="mobile-view" style={{backgroundColor:!isMenuOpen?'transparent':''}}>
+      <div style={{height:'10%',width:'100%'}}>
+          {isMenuOpen ? (
+              <IoCloseSharp style={{ transform: 'scale(2)',color:'white' }} onClick={toggleMenu} 
+              className="ml-4" />
+          ) : (
+              <IoIosMenu style={{ transform: 'scale(2)',color:'brown' }} onClick={toggleMenu}
+              className="ml-4 " />
+          )}
+      </div>
+      <div style={{height:'70%',width:"100%",display:"flex",flexDirection:'column'}}>
+      {isMenuOpen && (
+          <>
+              <button
+               className="mobile-navbar-button hover:bg-black text-white p-6"
+               onClick={() => {
+                window.open('https://app.deform.cc/form/8eb56bad-1bd4-43e4-9599-cf1946803c45', '_blank');
+              }}
+                  style={{cursor:'pointer'}}
+             >Become a Sponsor {'>>'} </button>
+              {/* <hr style={{width:"100%",height:'10px'}}></hr> */}
+              <button 
+              style={{cursor:'pointer'}}
+              className="mobile-navbar-button hover:bg-black text-white p-6"
+              onClick={() => {
+                window.open('https://app.deform.cc/form/76e18a7a-5e75-4244-b44a-16880353b552', '_blank');
+              }}
+             >Become a Speaker
+              {'>>'}</button>
+              {/* <hr style={{width:"100%",height:'10px'}}></hr> */}
+              <div className="p-4
+              ">
+              <Socials />
+              </div>
+          </>
+      )}
 
-                </div>
-                
-                
-            </div>
+      </div>
+      
+      
+  </div>
         </div>
     );
 }

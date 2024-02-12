@@ -16,34 +16,45 @@ function Sponsors() {
   };
 
   return (
-    <div className="mt-20 mb-20 p-8 self-center w-full flex flex-col color-moldy rounded-3xl">
-      <img className="pl-2 pt-2 h-20 w-60 place-self-center" alt="Partners" src={Partners} />
-      <div className="justify-center flex flex-row m-4">
-        <a href="https://purple.construction/" target="_blank" rel="noopener noreferrer" className="place-self-center p-2 mr-2 h-2/5 w-1/5">
+    <div className="p-6  my-10 sm:my-20 sm:p-8 
+    self-center w-full flex flex-col color-moldy rounded-xl sm:rounded-3xl">
+      <img className="pl-2 pt-2 h-8 w-24 sm:h-20 sm:w-60 place-self-center" alt="Partners" src={Partners} />
+      <div className="justify-center flex flex-col sm:flex sm:flex-row m-4">
+        <a href="https://purple.construction/" target="_blank" rel="noopener noreferrer" 
+        className="place-self-center  p-2 mr-2 h-100 sm:h-2/5 sm:w-1/5">
           <img src={logo1} alt="name" />
         </a>
-        <a href="https://www.deform.cc/" target="_blank" rel="noopener noreferrer" className="place-self-center p-2 mr-2 h-1/5 w-1/5">
+        <a href="https://www.deform.cc/" target="_blank" rel="noopener noreferrer" 
+        className="place-self-center  p-2 mr-2 h-100 sm:h-2/5 sm:w-1/5">
           <img src={logo2} alt="name" />
         </a>
-        <a href="https://polygon.technology/" target="_blank" rel="noopener noreferrer" className="place-self-center p-2 mr-2 h-1/5 w-1/5">
+        <a href="https://polygon.technology/" target="_blank" rel="noopener noreferrer" 
+        className="place-self-center  p-2 mr-2 h-100 sm:h-2/5 sm:w-1/5">
           <img src={logo3} alt="name" />
         </a>
-        <a href="https://streameth.org/" target="_blank" rel="noopener noreferrer" className="place-self-center p-2 mr-2 h-1/5 w-1/5">
+        <a href="https://streameth.org/" target="_blank" rel="noopener noreferrer" 
+        className="place-self-center  p-2 mr-2 h-100 sm:h-2/5 sm:w-1/5">
           <img src={logo4} alt="name" />
         </a>
       </div>
-      <div className="justify-center flex flex-row m-4">
-        <a href="https://esp.ethereum.foundation/" target="_blank" rel="noopener noreferrer" className="place-self-center p-2 mr-2 h-1/5 w-1/5">
+      <div className="justify-center flex flex-col sm:flex sm:flex-row m-4">
+        <a href="https://esp.ethereum.foundation/" target="_blank" rel="noopener noreferrer" 
+        className="place-self-center  p-2 mr-2 h-100 sm:h-2/5 sm:w-1/5">
           <img src={logo5} alt="name" />
         </a>
-        <a href="https://www.moongate.id/" target="_blank" rel="noopener noreferrer" className="place-self-center p-2 mr-2 h-1/5 w-1/5">
-          <img src={logo6} alt="name" />
-        </a>
-        <a href="https://www.availproject.org/" target="_blank" rel="noopener noreferrer" className="place-self-center p-2 mr-2 h-1/5 w-1/5">
+        <a href="https://www.availproject.org/" target="_blank" rel="noopener noreferrer" 
+        className="place-self-center  p-2 md:mr-2 h-100 sm:h-2/5 sm:w-1/5">
           <img src={logo7} alt="name" />
         </a>
+        <a href="https://www.moongate.id/" target="_blank" rel="noopener noreferrer" 
+        className="place-self-center  p-2 md:mr-2 h-100 sm:h-2/5 sm:w-1/5">
+          <img src={logo6} alt="name" />
+        </a>
       </div>
-      <button className="color-peachy p-2 rounded-full shadow-md text-color-moldy text-2xl m-4 pr-40 pl-40 mb-8 font-bold" onClick={handleButtonClick}> Become a Sponsor </button>
+      <button className="color-peachy p-2 
+      px-10 text-sm sm:m-4 sm:pr-40 sm:pl-40 sm:mb-8 sm:text-2xl
+      rounded-md sm:rounded-full shadow-md text-color-moldy  font-bold" 
+      onClick={handleButtonClick}> Become a Sponsor </button>
     </div>
   );
 }

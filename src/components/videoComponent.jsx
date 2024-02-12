@@ -6,7 +6,7 @@ function VideoEmbed() {
 
     return(
         <div className="min-w-full bg-rose-600 
-        rounded-3xl overflow-hidden shadow-lg
+        rounded-xl sm:rounded-3xl overflow-hidden shadow-lg
         text-white text-3xl font-bold">   
         {/* <video className="h-full w-full " controls>
         <source src={MainVideo} type="video/mp4" />

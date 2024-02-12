@@ -29,18 +29,19 @@ function BottomBox() {
        <div className="bg-cover bg-center bg-no-repeat
        " style={containerStyle}>
 
-        <div className="p-8 mt-20 flex flex-row
+        <div className="p-8 mt-20 flex flex-col
+        sm:flex sm:flex-row 
         justify-between">
-            <div className="flex-1 w-1/6 flex-col 
+            <div className="sm:flex-1 sm:w-1/6 flex-col pb-4 sm:pb-0
             "> 
                 <img src={logo} alt="ETH-Mumbai" className="h-2/3"/>
-                <div className="pl-20
+                <div className="sm:pl-20 text-center sm:text-left
                 "> 
                 <Socials />
                 </div>
             </div>
 
-            <div className="p-8  mr-6
+            <div className="p-4 sm:p-8 mr-6
             flex-1 flex-col opacity-85  w-full
             color-light-vibe
             rounded-xl
@@ -52,11 +53,12 @@ function BottomBox() {
             id="enterEmail"
             placeholder="Enter your email"/>
 
-            <div className="flex flex-row justify-between pt-2 pl-4 pr-4">
+            <div className="flex flex-row justify-between pt-2 px-4">
             <p className="text-left font-Herokid font-light">Sign up for our newsletter and join 
             <br /> aamchi ETHMumbai</p>
             <button className="bg-black text-white font-bold 
-            rounded-full p-5 shadow:md hover:shadow-lg
+            p-2 rounded-md
+            sm:rounded-full sm:p-5 shadow:md hover:shadow-lg
             "
             onClick={handleSignUp}>Sign Up </button>
             </div>

@@ -8,10 +8,11 @@ import LogoBottom from "../assets/mumbai.png";
 function First() {
 
     return(
-        <div className="mt-12 justify-center text-center color-peachy">
-           <div className="flex flex-row justify-between">
+        <div className="mt-6 sm:mt-12 justify-center text-center color-peachy">
+           <div className="
+           flex flex-col sm:flex sm:flex-row sm:justify-between">
             <div className="flex flex-col text-left ">
-            <img src={LogoTop} alt="Bild from" className="pt-32  w-full"/>
+            <img src={LogoTop} alt="Build from" className="pt-8 sm:pt-32 w-full"/>
             <img src={LogoBottom} alt="mumbai" className="w-full"/>
            
             <p id="heading" className="text-xl">for the world.</p>

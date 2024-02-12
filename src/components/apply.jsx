@@ -3,7 +3,9 @@ import Present from '../assets/apply2.png';
 
 function Apply() {
     return(
-        <div className="flex flex-col
+        <div className="
+        flex flex-col
+        mt-20 sm:mt-40
         pb-16
         ">
             <img className="mt-100 flex-1 self-center w-60 h-60" src={Present} alt="Presenting the first ever" />

@@ -29,11 +29,6 @@
   background-color: #FFF1DF;
 }
 
-/* .meow, .nav-menu,.sub-nav-menu{
-  display: flex;
-  flex-direction: row;
-} */
-
 .moving-millions img{
   max-width: 90%;
 }
@@ -154,24 +149,6 @@
   
   
 }
-
-/* 
-.apply-element{
-  font-family: 'Herokid',sans-serif;
-}
-
-#sub-text{
-  font-family: 'Herokid',sans-serif;
-  font-size: 1.5vw;
-  padding-top: 0%;
-  margin-top: 0%;
-}
-
-#main-text{
-  font-family: 'Herokid',sans-serif;
-  font-size: 2vw;
-  margin-bottom: 0%;
-} */
 
 .main-apply-btn{
   color: #000000;
