@@ -2,7 +2,7 @@
 
 /* Shared styles for both views */
 .navigation-menu {
-    width: 88vw;
+    /* width: 88vw; */
     height: 100px;
     display: flex;
     /* border: solid 1.5px black; */

@@ -21,7 +21,7 @@ function Socials() {
 <button id="twitter" 
         className="bg-black border-2 w-6 h-6 
         sm:w-12 sm:h-12 
-        text-sm sm:text-xl
+        text-sm sm:text-2xl
         rounded-md sm:rounded-2xl
         text-color-mustard 
         border-black hover:shadow-xl "
@@ -32,7 +32,7 @@ function Socials() {
         <button id="telegram" 
       className="bg-black border-2 w-6 h-6 
       sm:w-12 sm:h-12 
-      text-sm sm:text-xl
+      text-sm sm:text-2xl
       rounded-md sm:rounded-2xl
       text-color-mustard 
       border-black hover:shadow-xl "    

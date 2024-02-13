@@ -9,26 +9,34 @@ import FAQS from "../components/faqs";
 import NavigationBar from "../components/NavigationBar";
 import BottomBox from "../components/bottomBox";
 import Friends from "../components/friends";
+import MobileMenu from "../components/mobileView";
+import Mobilefooter from "../components/mobileFooter";
+import WebFooter from "../components/webFooter";
 
 function Website() {
-    return(
-        <div className="color-peachy">
-        <div className="pt-1 pr-16 pl-16 color-peachy text-center self-center">
-           <NavigationBar/>
-            <First/>
-            <Apply/>
-            <VideoEmbed/>
-            <Sponsors />
-            <ScheduleDropDown/>
-            <Speakers/>
-            <Friends />
-            <FAQS/>
-        </div>
-            <div className="color-peachy">
-            <BottomBox />
-            </div>
-        </div>
-    )
+  return (
+    <div className="color-peachy">
+	<div className="flex items-center justify-center color-peachy">
+	<NavigationBar />
+		</div>
+      <div className="pt-1 px-20 md:px-60 color-peachy text-center self-center">
+        <div className="">
+			<First />
+		</div>
+        <Apply />
+        <VideoEmbed />
+        <Sponsors />
+        <ScheduleDropDown />
+        <Speakers />
+        <Friends />
+        <FAQS />
+      </div>
+      <div className="color-peachy">
+		<WebFooter />
+		{/* <Mobilefooter /> */}
+      </div>
+    </div>
+  );
 }
 
 export default Website;
