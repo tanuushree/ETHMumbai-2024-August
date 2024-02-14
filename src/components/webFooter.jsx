@@ -25,7 +25,11 @@ function WebFooter() {
 
   return (
     <div className="flex flex-col" style={desktopContainerStyle}>
-      <div className="text-center mb-4">newsletter and logo</div>
+      <div className="text-center mb-4">
+        {/* newsletter and logo
+         */}
+         <Socials />
+        </div>
       <div className="">
         <img
           src={MumbaiLocal}
