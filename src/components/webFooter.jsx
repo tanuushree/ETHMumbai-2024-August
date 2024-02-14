@@ -2,6 +2,7 @@ import React from "react";
 import MumbaiLocal from "../assets/mumbaifooter.png";
 import logo from "../assets/logoT.png";
 import Socials from "./socials";
+import BottomBox from "./bottomBox";
 
 function WebFooter() {
   const desktopContainerStyle = {
@@ -30,13 +31,7 @@ function WebFooter() {
          */}
          <Socials />
         </div>
-      <div className="">
-        <img
-          src={MumbaiLocal}
-          alt="a scene describing MUMBAI"
-          className="h-fit"
-        />
-      </div>
+      
     </div>
   );
 }

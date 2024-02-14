@@ -32,8 +32,9 @@ function Website() {
         <FAQS />
       </div>
       <div className="color-peachy">
-		<WebFooter />
+		{/* <WebFooter /> */}
 		{/* <Mobilefooter /> */}
+		<BottomBox />
       </div>
     </div>
   );
