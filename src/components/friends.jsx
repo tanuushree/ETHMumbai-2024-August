@@ -12,7 +12,7 @@ function Friends() {
     <div className="p-4 my-10
     sm:my-20 sm:p-8 self-center w-full flex flex-col color-best 
     rounded-lg sm:rounded-3xl">
-      <img className="pl-2 pt-2 h-full place-self-center" alt="Partners" src={FriendsText} />
+      <img className="pl-2 pt-2 sm:h-14 place-self-center" alt="Partners" src={FriendsText} />
       <div className="justify-between sm:justify-center
       flex flex-col sm:flex sm:flex-row m-4">
         <a href=" https://www.ethbarcelona.com" target="_blank" rel="noopener noreferrer" 
