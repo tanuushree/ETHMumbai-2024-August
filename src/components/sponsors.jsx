@@ -4,7 +4,7 @@ import logo2 from "../assets/Partners/deform.png";
 import logo3 from "../assets/Partners/polygon.png";
 import logo4 from "../assets/Partners/streameth.png";
 import logo5 from "../assets/Partners/EF-ESP-logo-white-text.png";
-import logo6 from "../assets/Partners/moongate.png";
+import logo6 from "../assets/Partners/moongate_logo.png";
 import logo7 from "../assets/Partners/avail-white.png";
 
 import Partners from "../assets/partners.png";
