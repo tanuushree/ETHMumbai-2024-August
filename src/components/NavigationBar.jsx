@@ -6,7 +6,7 @@ import Socials from "./socials";
 function NavigationBar() {
 
   return (
-    <div className="navigation-menu sm:w-[88vw]
+    <div className="navigation-menu sm:w-full sm:mx-40 
     sm:border-0 sm:border-black sm:rounded-full">
       <div className="web-view" style={{ width: "100%" }}>
         <div

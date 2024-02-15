@@ -32,46 +32,48 @@ function BottomBox() {
     }
   };
 
+  var mobile = "flex flex-col-reverse ";
+
   return (
-    <div
-      className="bg-[length:0px_0px] sm:bg-cover sm:bg-center 
-      bg-no-repeat h-0 sm:h-fit flex-col"
-    >
-      <div className=" sm:mt-20 sm:mb-10 sm:flex sm:flex-row justify-between mx-60">
-        <div className="sm:flex-1 flex-col pb-4 sm:pb-0">
-          <div className="w-5/6 lg:w-2/3">
+    <div className="sm:h-fit flex-col">
+      <div
+        className={
+          mobile +
+          "sm:mt-20 sm:mb-10 sm:flex sm:flex-row justify-between sm:mx-60"
+        }
+      >
+        <div className="flex-1 flex flex-row items-center justify-center sm:items-start sm:justify-start">
+          <div className="w-2/3 lg:w-2/3 mx-10 sm:mx-0 my-2 sm:my-0">
             <img src={logo} alt="ETH-Mumbai" />
           </div>
         </div>
 
-        <div className="flex items-center">
+        <div className="flex flex-row items-center mx-10 sm:mx-0">
           <div
-            className="p-6
+            className="p-4 sm:p-6
             flex-1 flex-col opacity-85
             color-light-vibe
-            rounded-xl size-fit
+            rounded-xl 
             "
           >
             <input
               type="text"
-              className="
-            h-1/3 w-full mb-3 
+              className="w-full h-1 sm:h-4/5 mb-3 
             text-black color-light-fill
-            rounded-lg text-bold p-4 text-2xl"
+            rounded-lg text-bold p-4 text-lg sm:text-2xl"
               id="enterEmail"
               placeholder="Enter your email"
             />
 
-            <div className="flex flex-row gap-3">
-              <p className="text-left font-Herokid font-light">
+            <div className="flex flex-row gap-3 justify-between">
+              <p className="text-left font-Herokid font-light text-xs sm:text-sm size-fit">
                 Sign up for our newsletter and join
                 <br /> aamchi ETHMumbai
               </p>
               <button
-                className="bg-black text-white font-bold 
-            p-2 rounded-md
-            sm:rounded-2xl sm:p-5 shadow:md hover:shadow-lg order-last
-            "
+                className="bg-black text-white text-xs sm:text-lg sm:font-bold rounded-md
+                    sm:rounded-full px-1 sm:px-5 shadow:md hover:shadow-lg order-last
+                    "
                 onClick={handleSignUp}
               >
                 Sign Up
@@ -82,13 +84,11 @@ function BottomBox() {
       </div>
 
       <div className="text-center flex flew-row justify-center items-center">
-            <div className="z-10 absolute">
-            <Socials />
-            </div>
-            <img src={train} alt="ETH-Mumbai" className="w-full"/>
+        <div className="z-10 absolute">
+          <Socials />
+        </div>
+        <img src={train} alt="ETH-Mumbai" className="w-full" />
       </div>
-
-      
     </div>
   );
 }

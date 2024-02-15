@@ -19,7 +19,7 @@ function Website() {
 	<div className="flex items-center justify-center color-peachy">
 	<NavigationBar />
 		</div>
-      <div className="pt-1 px-20 md:px-60 color-peachy text-center self-center">
+      <div className="pt-1 px-5 sm:px-40 xl:px-60 color-peachy text-center self-center">
         <div className="">
 			<First />
 		</div>

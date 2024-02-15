@@ -4,7 +4,7 @@ import logo2 from "../assets/Partners/deform.png";
 import logo3 from "../assets/Partners/polygon.png";
 import logo4 from "../assets/Partners/streameth.png";
 import logo5 from "../assets/Partners/EF-ESP-logo-white-text.png";
-import logo6 from "../assets/Partners/Moongate.png";
+import logo6 from "../assets/Partners/moongate.png";
 import logo7 from "../assets/Partners/avail-white.png";
 
 import Partners from "../assets/partners.png";
@@ -19,22 +19,23 @@ function Sponsors() {
   return (
     <div
       className="p-4 sm:p-6 my-10 sm:my-20 sm:p-8 opacity-95 hover:shadow-xl
-    self-center w-full sm:flex sm:flex-col color-moldy rounded-xl sm:rounded-3xl"
+    self-center w-full flex flex-col color-moldy rounded-3xl sm:rounded-3xl"
     >
       <img
-        className="pl-2 pt-2 h-8 w-24 sm:h-20 sm:w-60 place-self-center"
+        className="m-2 sm:m-2 w-2/5 sm:w-1/5 place-self-center"
         alt="Partners"
         src={Partners}
       />
-      <div className="justify-center flex flex-row flex-wrap
-      sm:flex sm:flex-row m-2 sm:m-4">
+      <div
+        className="justify-center flex flex-row flex-wrap
+      sm:flex sm:flex-row m-2 sm:mt-4 gap-4 sm:gap-8"
+      >
         <a
           href="https://purple.construction/"
           target="_blank"
           rel="noopener noreferrer"
-          className="sm:place-self-center sm:p-2 sm:mr-2 w-2/5 h-1/2
-          mr-4
-           sm:h-2/5 sm:w-1/5"
+          className="place-self-center w-2/5
+           sm:w-1/5"
         >
           <img src={logo1} alt="name" />
         </a>
@@ -42,8 +43,8 @@ function Sponsors() {
           href="https://www.deform.cc/"
           target="_blank"
           rel="noopener noreferrer"
-          className="place-self-center sm:p-2 sm:mr-2  h-1/2
-          w-2/5 sm:h-2/5 sm:w-1/5"
+          className="place-self-center w-2/5
+          sm:w-1/5"
         >
           <img src={logo2} alt="name" />
         </a>
@@ -51,9 +52,8 @@ function Sponsors() {
           href="https://polygon.technology/"
           target="_blank"
           rel="noopener noreferrer"
-          className="sm:place-self-center sm:p-2 sm:mr-2 w-2/5
-          mr-4 h-1/2
-           sm:h-2/5 sm:w-1/5"
+          className="place-self-center w-2/5
+          sm:w-1/5"
         >
           <img src={logo3} alt="name" />
         </a>
@@ -61,8 +61,8 @@ function Sponsors() {
           href="https://streameth.org/"
           target="_blank"
           rel="noopener noreferrer"
-          className="place-self-center sm:p-2 sm:mr-2  h-1/2
-          w-2/5 sm:h-2/5 sm:w-1/5"
+          className="place-self-center w-2/5
+          sm:w-1/5"
         >
           <img src={logo4} alt="name" />
         </a>
@@ -71,8 +71,7 @@ function Sponsors() {
           href="https://esp.ethereum.foundation/"
           target="_blank"
           rel="noopener noreferrer"
-          className="sm:hidden place-self-center w-2/5 mt-2
-          mr-4 h-1/2"
+          className="sm:hidden place-self-center w-2/5"
         >
           <img src={logo5} alt="name" />
         </a>
@@ -80,8 +79,8 @@ function Sponsors() {
           href="https://www.availproject.org/"
           target="_blank"
           rel="noopener noreferrer"
-          className="sm:hidden place-self-center w-2/5 mt-2
-          h-1/2" >
+          className="sm:hidden place-self-center w-2/5"
+        >
           <img src={logo7} alt="name" />
         </a>
 
@@ -89,22 +88,22 @@ function Sponsors() {
           href="https://www.moongate.id/"
           target="_blank"
           rel="noopener noreferrer"
-          className="sm:hidden place-self-center w-1/3
-          ">
+          className="sm:hidden place-self-center w-2/5"
+        >
           <img src={logo6} alt="name" />
         </a>
-
       </div>
-      <div className="invisible sm:visible sm:justify-center 
+      <div
+        className="invisible sm:visible sm:justify-center 
       flex flex-row flex-wrap
       justify-between h-0 sm:h-full
-       sm:flex sm:flex-row sm:m-4">
+       sm:flex sm:flex-row sm:m-2 gap-8"
+      >
         <a
           href="https://esp.ethereum.foundation/"
           target="_blank"
           rel="noopener noreferrer"
-          className="place-self-center sm:p-2 sm:mr-2 w-1/3 mr-1
-           sm:h-2/5 sm:w-1/5"
+          className="place-self-center w-2/5 sm:w-1/5"
         >
           <img src={logo5} alt="name" />
         </a>
@@ -112,7 +111,7 @@ function Sponsors() {
           href="https://www.availproject.org/"
           target="_blank"
           rel="noopener noreferrer"
-          className="place-self-center  sm:p-2 sm:mr-2 w-1/3 sm:h-2/5 sm:w-1/5"
+          className="place-self-center w-2/5 sm:w-1/5"
         >
           <img src={logo7} alt="name" />
         </a>
@@ -120,19 +119,18 @@ function Sponsors() {
           href="https://www.moongate.id/"
           target="_blank"
           rel="noopener noreferrer"
-          className="place-self-center sm:p-2 sm:mr-2 w-1/3 sm:h-2/5 sm:w-1/5"
+          className="place-self-center w-2/5 sm:w-1/5"
         >
           <img src={logo6} alt="name" />
         </a>
       </div>
       <button
         className="color-peachy p-2 
-      sm:px-10 text-xs sm:text-sm sm:m-4 sm:pr-40 sm:pl-40 sm:mb-8 sm:text-2xl
-      rounded-md sm:rounded-full shadow-md text-color-moldy  font-bold"
+      text-xs sm:text-sm sm:mt-4 sm:text-2xl
+      rounded-full shadow-md text-color-moldy font-bold size-fit self-center"
         onClick={handleButtonClick}
       >
-        {" "}
-        Become a Sponsor{" "}
+        Become a Sponsor
       </button>
     </div>
   );

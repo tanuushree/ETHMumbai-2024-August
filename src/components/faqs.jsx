@@ -12,11 +12,11 @@ const answers = [
 
 function FAQS() {
   return (
-    <div className="">
+    <div className="my-10 sm:my-20">
       <div className="flex items-center justify-center">
-      <img src={faqtext} alt="FAQS" className="h-8 sm:h-16" />
+      <img src={faqtext} alt="FAQS" className="h-8 sm:h-12" />
       </div>
-      <div className="flex flex-col mb-4 pt-4 sm:pt-10">
+      <div className="flex flex-col pt-4 sm:pt-10">
         <FaqComponent question="Who can participate?" customKey="0" />
         <FaqComponent
           question="When and where is the hackathon happening?"
