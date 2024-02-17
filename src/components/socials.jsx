@@ -17,7 +17,7 @@ function Socials() {
     }
 
     return(
-        <div className="space-x-4 sm:space-x-8">   
+        <div className="flex flex-row gap-2 sm:gap-4">   
 <button id="twitter" 
         className="bg-black border-2 w-6 h-6 
         sm:w-12 sm:h-12 

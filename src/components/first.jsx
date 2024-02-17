@@ -17,7 +17,7 @@ function First() {
             <p id="heading" className="sm:text-xl">for the world.</p>
             <p id="sub-heading" className="pt-0">29th — 31st March 2024</p>
             </div>
-            <img src={Car} alt="a vintage taxy" className="self-center h-60 w-fit 
+            <img src={Car} alt="a vintage taxy" className="self-center h-60 w-1/2 
             sm:h-4/5 sm:w-fit" />
            </div>
         </div>

@@ -29,9 +29,9 @@ function NavigationBar() {
           />
         </div>
         <div
-          className="flex flex-row items-center justify-center w-full mr-4"
+          className="flex flex-row items-center justify-center w-full"
         >
-          <div className="flex flex-row h-full">
+          <div className="flex flex-row h-full gap-2">
             <button
               onClick={() => {
                 window.open(
@@ -40,8 +40,9 @@ function NavigationBar() {
                 );
               }}
               style={{ cursor: "pointer" }}
-              className="web-view-links  color-mustard text-black
-      p-6 font-bold place-content-center m-4 pt-4 pb-4 rounded-full shadow-md hover:shadow-xl self-center text-xl"
+              className="color-mustard text-black
+            size-fit font-bold place-content-center sm:px-4 rounded-full 
+            shadow-md hover:shadow-xl self-center text-xl"
             >
               Become a Speaker
             </button>
@@ -53,10 +54,9 @@ function NavigationBar() {
                 );
               }}
               style={{ cursor: "pointer" }}
-              className="web-view-links 
-      color-mustard text-black p-6 
-      font-bold place-content-center m-4 pt-4 pb-4 rounded-full shadow-md hover:shadow-xl self-center text-xl"
-            >
+              className="color-mustard text-black
+              size-fit font-bold place-content-center sm:px-4 rounded-full 
+              shadow-md hover:shadow-xl self-center text-xl" >
               Become a Sponsor
             </button>
           </div>
