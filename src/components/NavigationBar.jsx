@@ -6,12 +6,12 @@ import Socials from "./socials";
 function NavigationBar() {
 
   return (
-    <div className="navigation-menu sm:w-full sm:mx-40 
+    <div className="mx-20 mt-10
     sm:border-0 sm:border-black sm:rounded-full">
       <div className="web-view" style={{ width: "100%" }}>
         <div
+        className="sm:w-1/4"
           style={{
-            width: "60%",
             height: "100%",
             textAlign: "center",
             display: "flex",
@@ -29,7 +29,8 @@ function NavigationBar() {
           />
         </div>
         <div
-          className="flex flex-row items-center justify-center w-full"
+          className="flex flex-row mx-8
+          items-center justify-end w-full"
         >
           <div className="flex flex-row h-full gap-2">
             <button
@@ -41,7 +42,7 @@ function NavigationBar() {
               }}
               style={{ cursor: "pointer" }}
               className="color-mustard text-black
-            size-fit font-bold place-content-center sm:px-4 rounded-full 
+            size-fit font-bold place-content-center sm:py-2 sm:px-6 rounded-full 
             shadow-md hover:shadow-xl self-center text-xl"
             >
               Become a Speaker
@@ -55,7 +56,7 @@ function NavigationBar() {
               }}
               style={{ cursor: "pointer" }}
               className="color-mustard text-black
-              size-fit font-bold place-content-center sm:px-4 rounded-full 
+              size-fit font-bold place-content-center sm:py-2 sm:px-6  rounded-full 
               shadow-md hover:shadow-xl self-center text-xl" >
               Become a Sponsor
             </button>

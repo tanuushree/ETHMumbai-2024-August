@@ -40,12 +40,16 @@ function Apply() {
           Become a Sponsor{" "}
         </button>
       </div>
-      <img
+      {/* <img
         className="flex-1 self-center sm:w-3/5 mt-4"
         src={Present}
         alt="Presenting the first ever"
-      />
-      <p className="flex-1 text-xs sm:text-xl my-4">
+      /> */}
+      <h1 className="flex-1 text-sm sm:text-3xl mt-4">
+        {" "}
+       Presenting the first ever
+      </h1>
+      <p className="flex-1 text-xs sm:text-lg my-2">
         {" "}
         Ethereum hackathon in Mumbai
       </p>

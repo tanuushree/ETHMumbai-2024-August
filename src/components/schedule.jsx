@@ -18,7 +18,7 @@ const ScheduleDropDown = () => {
     };
 
     return(
-        <div className="p-8 rounded-3xl color-purple flex-wrap text-color-peachish">
+        <div className="p-4 sm:p-8 rounded-3xl color-purple flex-wrap text-color-peachish">
         <div className="p-2 flex flex-row justify-between">
             <img className="pl-1 pt-2 w-2/5 sm:w-1/5" alt="Schedule" src={Schedule}></img>
             {/* <button id="lilb" className="text-white font-bold" onClick={handleButtonClick}>+</button> */}

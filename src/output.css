@@ -643,6 +643,16 @@ video {
   margin-right: 0.5rem;
 }
 
+.mx-20 {
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+.mx-8 {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -656,11 +666,6 @@ video {
 .my-2 {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
-}
-
-.my-4 {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
 }
 
 .mb-2 {
@@ -701,6 +706,10 @@ video {
 
 .mr-6 {
   margin-right: 1.5rem;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
 }
 
 .mt-20 {
@@ -752,8 +761,8 @@ video {
   height: 66.666667%;
 }
 
-.h-40 {
-  height: 10rem;
+.h-20 {
+  height: 5rem;
 }
 
 .h-6 {
@@ -794,12 +803,12 @@ video {
   width: 40%;
 }
 
-.w-3\/4 {
-  width: 75%;
+.w-20 {
+  width: 5rem;
 }
 
-.w-40 {
-  width: 10rem;
+.w-3\/4 {
+  width: 75%;
 }
 
 .w-6 {
@@ -808,12 +817,6 @@ video {
 
 .w-64 {
   width: 16rem;
-}
-
-.w-fit {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
 }
 
 .w-full {
@@ -876,6 +879,10 @@ video {
   justify-content: space-between;
 }
 
+.gap-2 {
+  gap: 0.5rem;
+}
+
 .gap-3 {
   gap: 0.75rem;
 }
@@ -886,12 +893,6 @@ video {
 
 .gap-8 {
   gap: 2rem;
-}
-
-.space-x-4 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(1rem * var(--tw-space-x-reverse));
-  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .place-self-center {
@@ -982,10 +983,6 @@ video {
 
 .p-4 {
   padding: 1rem;
-}
-
-.p-6 {
-  padding: 1.5rem;
 }
 
 .p-8 {
@@ -1196,11 +1193,6 @@ code {
     margin-right: 0px;
   }
 
-  .sm\:mx-40 {
-    margin-left: 10rem;
-    margin-right: 10rem;
-  }
-
   .sm\:mx-60 {
     margin-left: 15rem;
     margin-right: 15rem;
@@ -1252,6 +1244,10 @@ code {
     height: 80%;
   }
 
+  .sm\:h-40 {
+    height: 10rem;
+  }
+
   .sm\:h-fit {
     height: -webkit-fit-content;
     height: -moz-fit-content;
@@ -1260,6 +1256,10 @@ code {
 
   .sm\:h-full {
     height: 100%;
+  }
+
+  .sm\:w-1\/4 {
+    width: 25%;
   }
 
   .sm\:w-1\/5 {
@@ -1280,6 +1280,10 @@ code {
 
   .sm\:w-4\/5 {
     width: 80%;
+  }
+
+  .sm\:w-40 {
+    width: 10rem;
   }
 
   .sm\:w-fit {
@@ -1320,14 +1324,12 @@ code {
     justify-content: space-between;
   }
 
-  .sm\:gap-8 {
-    gap: 2rem;
+  .sm\:gap-4 {
+    gap: 1rem;
   }
 
-  .sm\:space-x-8 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-x-reverse: 0;
-    margin-right: calc(2rem * var(--tw-space-x-reverse));
-    margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
+  .sm\:gap-8 {
+    gap: 2rem;
   }
 
   .sm\:self-start {
@@ -1371,11 +1373,6 @@ code {
     padding: 2rem;
   }
 
-  .sm\:px-4 {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-
   .sm\:px-40 {
     padding-left: 10rem;
     padding-right: 10rem;
@@ -1384,6 +1381,16 @@ code {
   .sm\:px-5 {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
+  }
+
+  .sm\:px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .sm\:py-2 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
   }
 
   .sm\:pb-0 {
@@ -1417,6 +1424,11 @@ code {
   .sm\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+
+  .sm\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 
   .sm\:text-lg {

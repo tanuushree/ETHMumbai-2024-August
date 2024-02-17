@@ -3,11 +3,11 @@
 /* Shared styles for both views */
 .navigation-menu {
     /* width: 88vw; */
-    height: 100px;
-    display: flex;
+    /* height: 100px; */
+    /* display: flex; */
     /* border: solid 1.5px black; */
     /* border-radius: 50px; */
-    margin-top: 30px;
+    /* margin-top: 30px; */
 }
 *{
     font-family: 'Poppins',sans-serif;
