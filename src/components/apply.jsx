@@ -10,7 +10,7 @@ function Apply() {
         pb-4 sm:pb-8
         "
     >
-      <div className="flex flex-row justify-center sm:hidden">
+      {/* <div className="flex flex-row justify-center sm:hidden">
         <button
           onClick={() => {
             window.open(
@@ -39,7 +39,7 @@ function Apply() {
           {" "}
           Become a Sponsor{" "}
         </button>
-      </div>
+      </div> */}
       {/* <img
         className="flex-1 self-center sm:w-3/5 mt-4"
         src={Present}
