@@ -1375,6 +1375,11 @@ code {
     padding-right: 2.5rem;
   }
 
+  .sm\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
   .sm\:px-40 {
     padding-left: 10rem;
     padding-right: 10rem;

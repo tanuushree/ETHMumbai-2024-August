@@ -125,9 +125,10 @@ function Sponsors() {
         </a>
       </div>
       <button
-        className="color-peachy p-2 
-      text-xs sm:text-sm sm:mt-4 sm:text-2xl
-      rounded-full shadow-md text-color-moldy font-bold size-fit self-center"
+        className="color-peachy p-2 sm:px-4
+      text-xs sm:text-md sm:mt-4 sm:text-xl
+      rounded-full shadow-md text-color-moldy 
+      font-bold self-center"
         onClick={handleButtonClick}
       >
         Become a Sponsor
