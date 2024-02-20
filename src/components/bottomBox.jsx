@@ -42,9 +42,13 @@ function BottomBox() {
           "sm:mt-20 sm:mb-10 sm:flex sm:flex-row justify-between sm:mx-60"
         }
       >
-        <div className="flex-1 flex flex-row items-center justify-center sm:items-start sm:justify-start">
+        <div className="flex-1 flex flex-col
+         items-center justify-center sm:items-start sm:justify-start">
           <div className="w-2/3 lg:w-2/3 mx-10 sm:mx-0 my-2 sm:my-0">
             <img src={logo} alt="ETH-Mumbai" />
+          </div>
+          <div className="m-2 sm:m-4 self-center">
+          <Socials />
           </div>
         </div>
 
@@ -84,9 +88,9 @@ function BottomBox() {
       </div>
 
       <div className="text-center flex flew-row justify-center items-center">
-        <div className="z-10 absolute">
+        {/* <div className="z-10 absolute">
           <Socials />
-        </div>
+        </div> */}
         <img src={train} alt="ETH-Mumbai" className="w-full" />
       </div>
     </div>

@@ -1014,6 +1014,11 @@ video {
   padding-right: 1.5rem;
 }
 
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
 .pb-4 {
   padding-bottom: 1rem;
 }
@@ -1026,16 +1031,8 @@ video {
   padding-left: 0.5rem;
 }
 
-.pl-20 {
-  padding-left: 5rem;
-}
-
 .pl-40 {
   padding-left: 10rem;
-}
-
-.pr-20 {
-  padding-right: 5rem;
 }
 
 .pr-40 {
@@ -1188,6 +1185,10 @@ code {
     margin: 0.5rem;
   }
 
+  .sm\:m-4 {
+    margin: 1rem;
+  }
+
   .sm\:mx-0 {
     margin-left: 0px;
     margin-right: 0px;
@@ -1320,8 +1321,8 @@ code {
     justify-content: space-between;
   }
 
-  .sm\:gap-4 {
-    gap: 1rem;
+  .sm\:gap-6 {
+    gap: 1.5rem;
   }
 
   .sm\:gap-8 {
@@ -1367,6 +1368,11 @@ code {
 
   .sm\:p-8 {
     padding: 2rem;
+  }
+
+  .sm\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
 
   .sm\:px-40 {

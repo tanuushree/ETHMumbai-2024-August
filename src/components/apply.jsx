@@ -45,7 +45,7 @@ function Apply() {
         src={Present}
         alt="Presenting the first ever"
       /> */}
-      <h1 className="flex-1 text-sm sm:text-3xl mt-4">
+      <h1 className="flex-1 text-md sm:text-3xl mt-4">
         {" "}
        Presenting the first ever
       </h1>
@@ -53,17 +53,18 @@ function Apply() {
         {" "}
         Ethereum hackathon in Mumbai
       </p>
-      <p className="flex-1 text-xs sm:text-lg font-bold mb-2">
+      {/* <p className="flex-1 text-xs sm:text-lg font-bold mb-2">
         {" "}
         Applications opening soon{" "}
-      </p>
+      </p> */}
 
       {/* TODO: Add later */}
-      {/* <button style={{cursor:'pointer'}}
-            onClick={() => { window.location.assign('https://app.deform.cc/form/136a7409-6df6-4a66-bc91-e4f2d884b0da/');}}
-            className="m-4 pr-20 pl-20 pt-4 pb-4 mb-8 rounded-full shadow-md hover:shadow-xl
-            flex-1 self-center main-apply-btn text-2xl">
-            Apply as a hacker</button> */}
+      <button style={{cursor:'pointer'}}
+            onClick={() => { window.open('https://ethmumbai.devfolio.co/', '_blank');}}
+            className="m-2 sm:m-4 px-4 py-1 sm:px-10 sm:py-2 mb-8 rounded-full 
+            shadow-md hover:shadow-xl font-bold
+            flex-1 self-center main-apply-btn sm:text-xl">
+            Apply with devfolio</button>
     </div>
   );
 }

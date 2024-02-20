@@ -1,12 +1,7 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "ETH-Mumbai",
+  "name": "First ever Ethereum Hackathon in Mumbai. Build from Mumbai, for the world. 29-31 March 2024.",
   "icons": [
-    {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
-    },
     {
       "src": "logo192.png",
       "type": "image/png",
