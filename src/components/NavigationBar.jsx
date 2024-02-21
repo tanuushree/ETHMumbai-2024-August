@@ -33,7 +33,7 @@ function NavigationBar() {
           items-center justify-end w-full"
         >
           <div className="flex flex-row h-full gap-2">
-            <button
+            {/* <button
               onClick={() => {
                 window.open(
                   "https://app.deform.cc/form/76e18a7a-5e75-4244-b44a-16880353b552",
@@ -46,7 +46,7 @@ function NavigationBar() {
             shadow-md hover:shadow-xl self-center text-xl"
             >
               Become a Speaker
-            </button>
+            </button> */}
             <button
               onClick={() => {
                 window.open(
