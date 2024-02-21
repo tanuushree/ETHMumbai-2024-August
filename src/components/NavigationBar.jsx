@@ -47,7 +47,7 @@ function NavigationBar() {
             >
               Become a Speaker
             </button> */}
-            <button
+            {/* <button
               onClick={() => {
                 window.open(
                   "https://app.deform.cc/form/8eb56bad-1bd4-43e4-9599-cf1946803c45",
@@ -59,7 +59,7 @@ function NavigationBar() {
               size-fit font-bold place-content-center sm:py-2 sm:px-6  rounded-full 
               shadow-md hover:shadow-xl self-center text-xl" >
               Become a Sponsor
-            </button>
+            </button> */}
           </div>
           <div className="flex items-center">
             <div className="ml-2">
