@@ -1,11 +1,9 @@
 import React from "react";
-import logo1 from "../assets/Partners/4.png";
-import logo2 from "../assets/Partners/deform.png";
-import logo3 from "../assets/Partners/polygon.png";
-import logo4 from "../assets/Partners/streameth.png";
-import logo5 from "../assets/Partners/EF-ESP-logo-white-text.png";
-import logo6 from "../assets/Partners/moongate_logo.png";
-import logo7 from "../assets/Partners/avail-white.png";
+import logo1 from "../assets/bounties/Arweave India - $2K.png";
+import logo2 from "../assets/bounties/Avail - $3K.png";
+import logo3 from "../assets/sponsors/Core1.png"
+import logo4 from "../assets/bounties/Lumio - $2K.png";
+import logo5 from "../assets/bounties/Purple DAO - $3K.png";
 
 import Partners from "../assets/bounties.png";
 
@@ -26,66 +24,55 @@ function Bounties() {
       sm:flex sm:flex-row m-2 sm:mt-4 gap-4 sm:gap-8"
       >
         <a
-          href="https://purple.construction/"
+          href="https://arweavehub.com/"
           target="_blank"
           rel="noopener noreferrer"
           className="place-self-center w-2/5
            sm:w-1/5"
         >
           <img src={logo1} alt="name" />
+          <p className="text-white font-Herokid">$2K</p>
         </a>
         <a
-          href="https://www.deform.cc/"
+          href="https://www.availproject.org/"
           target="_blank"
           rel="noopener noreferrer"
           className="place-self-center w-2/5
           sm:w-1/5"
         >
           <img src={logo2} alt="name" />
+          <p className="text-white font-Herokid">$3K</p>
+          
         </a>
         <a
-          href="https://polygon.technology/"
+          href="https://coredao.org/"
           target="_blank"
           rel="noopener noreferrer"
           className="place-self-center w-2/5
           sm:w-1/5"
         >
           <img src={logo3} alt="name" />
+          <p className="text-white font-Herokid">$2K</p>
         </a>
         <a
-          href="https://streameth.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="place-self-center w-2/5
-          sm:w-1/5"
-        >
-          <img src={logo4} alt="name" />
-        </a>
-
-        <a
-          href="https://esp.ethereum.foundation/"
+          href="https://purple.construction/"
           target="_blank"
           rel="noopener noreferrer"
           className="sm:hidden place-self-center w-2/5"
         >
           <img src={logo5} alt="name" />
-        </a>
-        <a
-          href="https://www.availproject.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="sm:hidden place-self-center w-2/5"
-        >
-          <img src={logo7} alt="name" />
-        </a>
+          <p className="text-white font-Herokid">$3K</p>
 
+        </a>
         <a
-          href="https://www.moongate.id/"
+          href="https://lumio.io/"
           target="_blank"
           rel="noopener noreferrer"
           className="sm:hidden place-self-center w-2/5"
         >
-          <img src={logo6} alt="name" />
+          <img src={logo4} alt="name" />
+          <p className="text-white font-Herokid">$2K</p>
+
         </a>
       </div>
       <div
@@ -95,28 +82,24 @@ function Bounties() {
        sm:flex sm:flex-row sm:m-2 gap-8"
       >
         <a
-          href="https://esp.ethereum.foundation/"
+          href="https://purple.construction/"
           target="_blank"
           rel="noopener noreferrer"
           className="place-self-center w-2/5 sm:w-1/5"
         >
           <img src={logo5} alt="name" />
+          <p className="text-white font-Herokid">$3K</p>
+
         </a>
         <a
-          href="https://www.availproject.org/"
+          href="https://lumio.io/"
           target="_blank"
           rel="noopener noreferrer"
           className="place-self-center w-2/5 sm:w-1/5"
         >
-          <img src={logo7} alt="name" />
-        </a>
-        <a
-          href="https://www.moongate.id/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="place-self-center w-2/5 sm:w-1/5"
-        >
-          <img src={logo6} alt="name" />
+          <img src={logo4} alt="name" />
+          <p className="text-white font-Herokid">$2K</p>
+
         </a>
       </div>
   
