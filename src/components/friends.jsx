@@ -1,5 +1,5 @@
 import React from "react";
-import logo1 from "../assets/friends/ETHBarcelona.png";
+import logo1 from "../assets/friends/ETHBarcelonawhite.png";
 import logo2 from "../assets/friends/ETHBelgrade.png";
 import logo3 from "../assets/friends/ETHCHI-White-horizontal.png";
 import logo4 from "../assets/friends/ETHrome.png";
