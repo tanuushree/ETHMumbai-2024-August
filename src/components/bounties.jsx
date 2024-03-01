@@ -7,14 +7,9 @@ import logo5 from "../assets/Partners/EF-ESP-logo-white-text.png";
 import logo6 from "../assets/Partners/moongate_logo.png";
 import logo7 from "../assets/Partners/avail-white.png";
 
-import Partners from "../assets/sponsors.png";
+import Partners from "../assets/bounties.png";
 
-function Sponsors() {
-  const handleButtonClick = () => {
-    const linkToOpen =
-      "https://app.deform.cc/form/8eb56bad-1bd4-43e4-9599-cf1946803c45";
-    window.open(linkToOpen, "_blank");
-  };
+function Bounties() {
 
   return (
     <div
@@ -124,17 +119,9 @@ function Sponsors() {
           <img src={logo6} alt="name" />
         </a>
       </div>
-      <button
-        className="color-peachy p-2 sm:px-4
-      text-xs sm:text-md sm:mt-4 sm:text-xl
-      rounded-full shadow-md text-color-moldy 
-      font-bold self-center"
-        onClick={handleButtonClick}
-      >
-        Become a Sponsor
-      </button>
+  
     </div>
   );
 }
 
-export default Sponsors;
+export default Bounties;

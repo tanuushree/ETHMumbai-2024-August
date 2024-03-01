@@ -5,8 +5,8 @@ function Speakers() {
     return(
         <div className="my-10 sm:my-20 flex flex-col justify-center 
         ">
-        <img src={SpeakersText} alt="Speakers" className="mx-auto block w-2/5 sm:w-1/5" />
-        <p className="font-Herokid mt-6 mb-4 text-sm">Attend ETHMumbai with the Brightest of Minds.</p>
+        {/* <img src={SpeakersText} alt="Speakers" className="mx-auto block w-2/5 sm:w-1/5" /> */}
+        <p className="font-Herokid font-bold my-6 text-xl">Attend ETHMumbai with the Brightest of Minds.</p>
         <div className="px-6 sm:p-2 gap-8
         flex flex-row sm:flex-row flex-wrap justify-between">
              {/* TODO: pass speaker details as prop when speakers

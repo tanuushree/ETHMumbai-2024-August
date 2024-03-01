@@ -12,6 +12,8 @@ import Friends from "../components/friends";
 import MobileMenu from "../components/mobileView";
 import Mobilefooter from "../components/mobileFooter";
 import WebFooter from "../components/webFooter";
+import Bounties from "../components/bounties";
+import Partners from "../components/partners";
 
 function Website() {
   return (
@@ -26,6 +28,8 @@ function Website() {
         <Apply />
         <VideoEmbed />
         <Sponsors />
+        <Bounties />
+        <Partners />
         <ScheduleDropDown />
         <Speakers />
         <Friends />

@@ -1,6 +1,6 @@
 import React from "react";
 import { useState, useEffect  } from "react";
-import Schedule from "../assets/sch.png";
+import Schedule from "../assets/schedule.png";
 
 const ScheduleDropDown = () => {
 

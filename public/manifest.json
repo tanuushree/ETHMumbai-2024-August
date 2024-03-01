@@ -3,12 +3,12 @@
   "name": "First ever Ethereum Hackathon in Mumbai. Build from Mumbai, for the world. 29-31 March 2024.",
   "icons": [
     {
-      "src": "logo192.png",
+      "src": "post.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "logo512.png",
+      "src": "eth_mumbai_logo.png",
       "type": "image/png",
       "sizes": "512x512"
     }
