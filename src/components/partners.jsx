@@ -2,6 +2,7 @@ import React from "react";
 import logo1 from "../assets/Partners/deform.png";
 import logo2 from "../assets/Partners/streameth.png";
 import logo3 from "../assets/Partners/moongate_logo.png";
+import logo4 from '../assets/Partners/solidityscan.png';
 
 import PartnersLogo from "../assets/partners.png";
 
@@ -47,6 +48,15 @@ function Partners() {
           sm:w-1/5"
         >
           <img src={logo3} alt="name" />
+        </a>
+        <a
+          href="https://solidityscan.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="place-self-center w-2/5
+          sm:w-1/5"
+        >
+          <img src={logo4} alt="name" />
         </a>
       </div>
     </div>

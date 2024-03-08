@@ -4,6 +4,8 @@ import logo2 from "../assets/bounties/Avail - $3K.png";
 import logo3 from "../assets/sponsors/Core1.png"
 import logo4 from "../assets/bounties/Lumio - $2K.png";
 import logo5 from "../assets/bounties/Purple DAO - $3K.png";
+import logo6 from "../assets/bounties/PSE - $3K.png";
+import logo7 from "../assets/bounties/Anon Aadhar - $3K.png";
 
 import Partners from "../assets/bounties.png";
 
@@ -41,7 +43,7 @@ function Bounties() {
           sm:w-1/5"
         >
           <img src={logo2} alt="name" />
-          <p className="text-white font-Herokid">$3K</p>
+          <p className="text-white font-Herokid">$2K</p>
           
         </a>
         <a
@@ -74,6 +76,26 @@ function Bounties() {
           <p className="text-white font-Herokid">$2K</p>
 
         </a>
+        <a
+          href="https://pse.dev/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="sm:hidden place-self-center w-2/5"
+        >
+          <img src={logo6} alt="name" />
+          <p className="text-white font-Herokid">$3K</p>
+
+        </a>
+        <a
+          href="https://anon-aadhaar-documentation.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="sm:hidden place-self-center w-2/5"
+        >
+          <img src={logo7} alt="name" />
+          <p className="text-white font-Herokid mt-3">$3K</p>
+
+        </a>
       </div>
       <div
         className="invisible sm:visible sm:justify-center 
@@ -99,6 +121,26 @@ function Bounties() {
         >
           <img src={logo4} alt="name" />
           <p className="text-white font-Herokid">$2K</p>
+
+        </a>
+        <a
+          href="https://pse.dev/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="place-self-center w-1/5"
+        >
+          <img src={logo6} alt="name" />
+          <p className="text-white font-Herokid">$3K</p>
+
+        </a>
+        <a
+          href="https://anon-aadhaar-documentation.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="place-self-center w-1/5"
+        >
+          <img src={logo7} alt="name" />
+          <p className="text-white font-Herokid mt-3">$3K</p>
 
         </a>
       </div>
