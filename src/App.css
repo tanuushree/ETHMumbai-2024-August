@@ -12,13 +12,13 @@
 /* Venue CSS */
 .venue-specifications{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .venue-heading{
   font-family: 'Paper',sans-serif;
   font-size: 60px;
-  text-align: left;
+  text-align: center;
 }
 
 .venue-image{
@@ -28,12 +28,19 @@
 }
 @media (max-width: 396px) { 
   .venue-image{
-    height: 300px;
+    height: 50vw;
   }
 }
 @media (max-width: 640px) and (min-width: 396px) {
   .venue-image{
     width: 600px;
+    
+  }
+}
+
+@media (min-width: 640px) and (max-width:1024px) {
+  .venue-specifications{
+    width: 50vw;
     
   }
 }
