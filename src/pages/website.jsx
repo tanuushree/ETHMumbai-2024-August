@@ -14,6 +14,7 @@ import Mobilefooter from "../components/mobileFooter";
 import WebFooter from "../components/webFooter";
 import Bounties from "../components/bounties";
 import Partners from "../components/partners";
+import Venue from "../components/venue";
 
 function Website() {
   return (
@@ -30,6 +31,7 @@ function Website() {
         <Sponsors />
         <Bounties />
         <Partners />
+        <Venue/>
         <ScheduleDropDown />
         <Speakers />
         <Friends />
