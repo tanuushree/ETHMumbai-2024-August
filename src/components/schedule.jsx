@@ -1,120 +1,138 @@
-import React from "react";
-import { useState, useEffect  } from "react";
-import Schedule from "../assets/schedule.png";
+import { useState } from 'react';
+import ScheduleHeadlineLogo from '../assets/schedule.png';
+import { motion } from 'framer-motion';
 
-const ScheduleDropDown = () => {
+const ScheduleData = [
+    {
+        date: "29th March",
+        events: [
+            {
+                headline: "Check-in",
+                startTime: "8 AM",
+                endTime: "3 PM"
+            },
+            {
+                headline: "Team Formation",
+                startTime: "10 AM",
+                endTime: "12 PM"
+            },
+            {
+                headline: "Opening ceremony + talks",
+                startTime: "12 PM",
+                endTime: "2 PM"
+            },
+            {
+                headline: "Hacking begins",
+                startTime: "3 PM",
+                endTime: "4 PM"
+            },
+            {
+                headline: "Workshops",
+                startTime: "4 PM",
+                endTime: "8 PM"
+            }
+        ]
+    },
+    {
+        date: "30th March",
+        events: [
+            {
+                headline: "Mid-way project check by mentors",
+                startTime: "12 PM",
+                endTime: "2 PM"
+            }
+        ]
+    },
+    {
+        date: "31st March",
+        events: [
+            {
+                headline: "Project submission deadline",
+                startTime: "9 AM"
+            },
+            {
+                headline: "Main event tracks judging + sponsor tracks judging",
+                startTime: "10 AM",
+                endTime: "1 PM"
+            },
+            {
+                headline: "Sponsor tracks winners's announcement",
+                startTime: "4 PM",
+                endTime: "4:30 PM"
+            },
+            {
+                headline: "Main tracks winners' announcement",
+                startTime: "4:30 PM",
+                endTime: "5:15 PM",
+            },
+            {
+                headline: "Closing ceremony",
+                startTime: "5:15 PM",
+                endTime: "6 PM"
+            }
+        ]
+    }
+]
 
-    const [isScheduleVisible, setIsScheduleVisible] = useState(false);
-    useEffect(() => {
-        const smallButton = document.getElementById('lilb');
-        
-        if (smallButton) {
-          smallButton.textContent = isScheduleVisible ? '-' : '+';
-        }
-      }, [isScheduleVisible]);
-
-    const handleButtonClick = () => {
-        setIsScheduleVisible(!isScheduleVisible);
-    };
-
-    return(
-        <div className="p-4 sm:p-8 rounded-3xl color-purple flex-wrap text-color-peachish">
-        <div className="p-2 flex flex-row justify-between">
-            <img className="pl-1 pt-2 w-2/5 sm:w-1/5" alt="Schedule" src={Schedule}></img>
-            {/* <button id="lilb" className="text-white font-bold" onClick={handleButtonClick}>+</button> */}
-            <button id="temporary-button" className="text-white font-bold">TBA</button>
+export default function Schedule() {
+    const [openSchedule, setOpenSchedule] = useState(false);
+    return <div className="schedule-dropdown p-4 sm:p-8 rounded-3xl color-purple flex-wrap text-color-peachish cursor-pointer select-none"
+        onClick={() => setOpenSchedule(!openSchedule)}>
+        <div className='schedule-dropdown-trigger-content flex flex-row items-center justify-between'>
+            <div className="flex flex-col items-start gap-4">
+                <img alt="schedule-headline" src={ScheduleHeadlineLogo} className='w-[160px]' />
+                <p>{"What, when, & where!"}</p>
+            </div>
+            <span className={`font-semibold text-5xl ${!openSchedule && "duration-200 rotate-90"}`}>
+                {openSchedule ? "-" : "+"}
+            </span>
         </div>
-        <p className="flex-1 p-2 ml-1 text-left text-sm font-Herokid">What, when, & where!</p>
-        {isScheduleVisible && <ScheduleContents />}
-        </div>
-    )
+        {openSchedule && <div className='schedule-content-container mt-12 grid grid-cols-1 gap-12'>
+            {ScheduleData.map((schedule, index) => {
+                return <ScheduleDayBlock day={index + 1} date={schedule.date} key={index}>
+                    {schedule?.events?.map((hackathonEvent, eventIndex) => {
+                        return <ScheduleItem
+                            key={eventIndex}
+                            headline={hackathonEvent.headline}
+                            startTime={hackathonEvent.startTime}
+                            endTime={hackathonEvent.endTime}
+                            threshold={eventIndex* index}
+                        />
+                    })}
+                </ScheduleDayBlock>
+            })}
+        </div>}
+    </div>
 }
 
-export default ScheduleDropDown;
-
-const ScheduleContents = () => {
-
-    const gosomewhere = () => {
-        const twitterURL = "https://twitter.com/ethmumbai";
-        window.location.href = twitterURL;
-    }
-
-    return(
-        <div>
-            <div className="p-4 flex flex-row text-color-peachish justify-between">
-                <div className="p-2 flex flex-col">
-                <div className="justify-start font-bold text-xl">MIP24</div>
-                <div className="font-poppins text-xl">24th March - 31st March</div>
-                <p className="font-light font-Herokid"> Lorem ipsum dolor sit amet </p>
-                </div> 
-                <div className="h-96 w-1/2">
-                <svg className="h-full w-full">
-                     {/* (x1,y1 x2,y2 x3,y3 x4,y4)  */}
-                     {/* (top-left top-right bottom-right bottom-left)  */}
-                     <polygon points="20,30 500,20 480,380 30,380" className="fill-gray-300" />
-                </svg>
-                </div>
-            </div>
-            <hr />
-            <h3 className="align-left text-white font-bold text-left"> Main event </h3>
-            <div className="flex flex-row justify-between text-color-purple mb-2"> 
-             <div className="justify-start font-bold font-poppins">Day 1</div>
-            <div className="justify-end">24th March</div>
-            </div>
-            <div className="flex flex-row justify-between text-white mb-4"> 
-             <div className="justify-start">A CRAZY EVENT IN DETAIL</div>
-            <div className="justify-end">12PM - 2PM</div>
-            </div>
-
-            <p className="text-white font-light text-left"> PANEL DISCUSSION </p>
-            <div className="flex flex-row justify-between text-white mb-4"> 
-             <div className="justify-start">A CRAZY EVENT IN DETAIL</div>
-            <div className="justify-end">12PM - 2PM</div>
-            </div>
-
-            <p className="text-white font-light text-left"> WORKSHOP </p>
-            <div className="flex flex-row justify-between text-white mb-4"> 
-             <div className="justify-start">A CRAZY EVENT IN DETAIL</div>
-            <div className="justify-end">12PM - 2PM</div>
-            </div>
-
-            <p className="text-white font-light text-left"> WORKSHOP </p>
-            <div className="flex flex-row justify-between text-white mb-4"> 
-             <div className="justify-start">A CRAZY EVENT IN DETAIL</div>
-            <div className="justify-end">12PM - 2PM</div>
-            </div>
-
-            <div className="flex flex-row justify-between text-color-purple mb-2"> 
-             <div className="justify-start font-bold font-poppins">Day 2</div>
-            <div className="justify-end">24th March</div>
-            </div>
-
-            <div className="flex flex-row justify-between text-white mb-4"> 
-             <div className="justify-start">A CRAZY EVENT IN DETAIL</div>
-            <div className="justify-end">12PM - 2PM</div>
-            </div>
-
-            <p className="text-white font-light text-left"> PANEL DISCUSSION </p>
-            <div className="flex flex-row justify-between text-white mb-4"> 
-             <div className="justify-start">A CRAZY EVENT IN DETAIL</div>
-            <div className="justify-end">12PM - 2PM</div>
-            </div>
-
-            <p className="text-white font-light text-left"> WORKSHOP </p>
-            <div className="flex flex-row justify-between text-white mb-4"> 
-             <div className="justify-start">A CRAZY EVENT IN DETAIL</div>
-            <div className="justify-end">12PM - 2PM</div>
-            </div>
-
-            <p className="text-white font-light text-left"> WORKSHOP </p>
-            <div className="mb-6 flex flex-row justify-between text-white mb-4"> 
-             <div className="justify-start">A CRAZY EVENT IN DETAIL</div>
-            <div className="justify-end">12PM - 2PM</div>
-            </div>
-
-            <button onClick={gosomewhere} className="color-mustard font-poppins font-bold
-            p-2 rounded-full text-black w-full shadow-lg hover:shadow-xl
-            text-2xl m-4 pr-40 pl-40 mb-8 font-bold"> Grab your tickets </button>
+function ScheduleDayBlock({ children, day, date }) {
+    return <div className='schedule-day-block grid grid-cols-1 gap-4'>
+        <div className='schedule-day-block-header flex flex-row items-center justify-between'>
+            <h3 className="font-semibold text-3xl opacity-50 font-Herokid">Day {day}</h3>
+            <p className="font-medium text-xl">{date}</p>
         </div>
-    )
+        <div className='schedule-day-content-wrapper mt-4 grid grid-cols-1 gap-4'>
+            {children}
+        </div>
+    </div>
+}
+
+function ScheduleItem({ headline, startTime, endTime="", threshold=1 }) {
+    return <motion.div className='schedule-item flex flex-row items-center justify-between'
+        initial={{
+            opacity: 0,
+            x: -40 * (threshold+1)
+        }}
+        animate={{
+            opacity: 1,
+            x: 0
+        }}
+    >
+        <p className='schedule-item-headline font-bold text-xl text-white font-Herokid'>
+            {headline}
+        </p>
+        <p className='schedule-item-timeslot-wrapper'>
+            {`${startTime}${endTime ? (' - ' + endTime) : ""}`}
+        </p>
+    </motion.div>
 }
