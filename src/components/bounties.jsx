@@ -6,6 +6,7 @@ import LumioLogo from "../assets/bounties/Lumio - $2K.png";
 import PurpleDAOLogo from "../assets/bounties/Purple DAO - $3K.png";
 import PSELogo from "../assets/bounties/PSE - $3K.png";
 import AnonAadharLogo from "../assets/bounties/Anon Aadhar - $3K.png";
+import TheGraphLogo from '../assets/bounties/The Graph - $2K.png';
 
 import BountiesLogo from "../assets/bounties.png";
 
@@ -193,6 +194,12 @@ const BountiesData = [
     logo: AnonAadharLogo,
     amount: "$3K",
     url: "https://anon-aadhaar-documentation.vercel.app/"
+  },
+  {
+    name: "TheGraph",
+    logo: TheGraphLogo,
+    amount: "$2K",
+    url: "https://thegraph.com/"
   }
 ]
 
