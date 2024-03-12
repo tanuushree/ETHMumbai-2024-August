@@ -81,9 +81,9 @@ export default function Schedule() {
         <div className='schedule-dropdown-trigger-content flex flex-row items-center justify-between'>
             <div className="flex flex-col items-start gap-4">
                 <img alt="schedule-headline" src={ScheduleHeadlineLogo} className='w-[160px]' />
-                <p>{"What, when, & where!"}</p>
+                <p className='max-md:text-sm'>{"What, when, & where!"}</p>
             </div>
-            <span className={`font-semibold text-5xl ${!openSchedule && "duration-200 rotate-90"}`}>
+            <span className={`font-semibold text-5xl max-md:text-3xl ${!openSchedule && "duration-200 rotate-90"}`}>
                 {openSchedule ? "-" : "+"}
             </span>
         </div>
@@ -108,8 +108,8 @@ export default function Schedule() {
 function ScheduleDayBlock({ children, day, date }) {
     return <div className='schedule-day-block grid grid-cols-1 gap-4'>
         <div className='schedule-day-block-header flex flex-row items-center justify-between'>
-            <h3 className="font-semibold text-3xl opacity-50 font-Herokid">Day {day}</h3>
-            <p className="font-medium text-xl">{date}</p>
+            <h3 className="font-semibold text-3xl opacity-50 font-Herokid max-md:text-xl">Day {day}</h3>
+            <p className="font-medium text-base">{date}</p>
         </div>
         <div className='schedule-day-content-wrapper mt-4 grid grid-cols-1 gap-4'>
             {children}
@@ -128,10 +128,10 @@ function ScheduleItem({ headline, startTime, endTime="", threshold=1 }) {
             x: 0
         }}
     >
-        <p className='schedule-item-headline font-bold text-xl text-white font-Herokid'>
+        <p className='schedule-item-headline font-bold text-white font-Herokid text-sm md:text-2xl text-left w-[24ch]'>
             {headline}
         </p>
-        <p className='schedule-item-timeslot-wrapper'>
+        <p className='schedule-item-timeslot-wrapper text-xs font-semibold md:text-base text-right'>
             {`${startTime}${endTime ? (' - ' + endTime) : ""}`}
         </p>
     </motion.div>
