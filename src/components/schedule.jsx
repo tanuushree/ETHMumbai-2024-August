@@ -23,8 +23,7 @@ const ScheduleData = [
             },
             {
                 headline: "Hacking begins",
-                startTime: "3 PM",
-                endTime: "4 PM"
+                startTime: "3 PM"
             },
             {
                 headline: "Workshops",
