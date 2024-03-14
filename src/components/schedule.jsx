@@ -80,7 +80,7 @@ export default function Schedule() {
         <div className='schedule-dropdown-trigger-content flex flex-row items-center justify-between'>
             <div className="flex flex-col items-start gap-4">
                 <img alt="schedule-headline" src={ScheduleHeadlineLogo} className='w-[160px]' />
-                <p className='max-md:text-sm'>{"What, when, & where!"}</p>
+                <p className='max-md:text-sm'>{"What & when!"}</p>
             </div>
             <span className={`font-semibold text-5xl max-md:text-3xl ${!openSchedule && "duration-200 rotate-90"}`}>
                 {openSchedule ? "-" : "+"}
