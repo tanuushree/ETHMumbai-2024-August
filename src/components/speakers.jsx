@@ -43,8 +43,8 @@ function Speakers() {
                 <SpeakerComponent name="Preet Parekh" imageUrl={judge6} speakerCreds="Devfolio" />
                 <SpeakerComponent name="Sachin Mittal" imageUrl={judge7} speakerCreds="111 DAO" />
                 <SpeakerComponent name="Sahil Sen" imageUrl={judge8} speakerCreds="QuickNode" />
-                <SpeakerComponent name="Saravanan Vijayakumaran" imageUrl={judge9} speakerCreds="IIT Bombay" />
-                <SpeakerComponent name="Shantanu Vishwanadha" imageUrl={judge10} speakerCreds="Powerloom" />
+                <SpeakerComponent name="Saravanan" imageUrl={judge9} speakerCreds="IIT Bombay" />
+                <SpeakerComponent name="Shantanu" imageUrl={judge10} speakerCreds="Powerloom" />
             </div>
         </div>
     )
