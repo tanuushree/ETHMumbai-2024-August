@@ -5,7 +5,6 @@ import mentor3 from "../assets/mentors/Jayesh Bhole, Router Protocol.jpeg";
 import mentor4 from "../assets/mentors/Sneha Mishra, Social3.png";
 import mentor5 from "../assets/mentors/Sumit Vekariya, Sacred Protocol.png";
 import mentor6 from "../assets/mentors/Vanshika Rana, Instadapp.png";
-
 import judge1 from "../assets/judges/Denver Dsouza, Devfolio.jpg";
 import judge2 from "../assets/judges/Gnana Lakshmi, Starknet Foundation.jpeg";
 import judge3 from "../assets/judges/Harsh Bajpai, Kakarot zkEVM.jpeg";
@@ -18,8 +17,8 @@ import judge9 from "../assets/judges/Saravanan Vijayakumaran, IIT Bombay.jpg";
 import judge10 from "../assets/judges/Shantanu Vishwanadha, Powerloom.jpeg";
 
 
-
-
+const starknet = ""
+const judgeName = starknet.split("\n");
 
 function Speakers() {
     return(
@@ -36,7 +35,7 @@ function Speakers() {
                 <SpeakerComponent name="Vanshika Rana" imageUrl={mentor6} speakerCreds="Instadapp" />
 
                 <SpeakerComponent name="Denver Dsouza" imageUrl={judge1} speakerCreds="Devfolio" />
-                <SpeakerComponent name="Gnana Lakshmi" imageUrl={judge2} speakerCreds="Starknet Foundation" />
+                <SpeakerComponent name="Gnana Lakshmi" imageUrl={judge2} speakerCreds="Starknet" />
                 <SpeakerComponent name="Harsh Bajpai" imageUrl={judge3} speakerCreds="Kakarot zkEVM" />
                 <SpeakerComponent name="Hidayath Shaik" imageUrl={judge4} speakerCreds=" Webhash" />
                 <SpeakerComponent name="Hitesh Malviya" imageUrl={judge5} speakerCreds="DYOR" />
@@ -55,7 +54,7 @@ export default Speakers;
 const SpeakerComponent = ({ name, imageUrl, speakerCreds }) => {
     return(
         <div className="flex flex-col self-center">
-            <div className="border-2 border-black rounded-full bg-amber-600 h-20 w-20 sm:h-40 sm:w-40">
+            <div className="self-center border-2 border-black rounded-full bg-amber-600 h-20 w-20 sm:h-40 sm:w-40">
                 {/* You can use the imageUrl prop to display the speaker's picture */}
                 <img src={imageUrl} alt={name} className="rounded-full w-full h-full object-cover" />
             </div>
