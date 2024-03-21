@@ -4,8 +4,7 @@ import logo2 from "../assets/Partners/avail-white.png";
 import logo3 from "../assets/sponsors/Core1.png";
 import logo4 from "../assets/Partners/EF-ESP-logo-white-text.png";
 import logo5 from "../assets/sponsors/Lumio.png";
-import logo6 from "../assets/Partners/polygon.png";
-import logo7 from "../assets/Partners/4.png";
+import logo6 from "../assets/Partners/4.png";
 
 
 import SponsorText from "../assets/sponsors.png";
@@ -82,15 +81,6 @@ function Sponsors() {
           rel="noopener noreferrer"
           className="sm:hidden place-self-center w-2/5"
         >
-          <img src={logo7} alt="name" />
-        </a>
-
-        <a
-          href="https://polygon.technology/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="sm:hidden place-self-center w-2/5"
-        >
           <img src={logo6} alt="name" />
         </a>
       </div>
@@ -110,14 +100,6 @@ function Sponsors() {
         </a>
         <a
           href="https://purple.construction/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="place-self-center w-2/5 sm:w-1/5"
-        >
-          <img src={logo7} alt="name" />
-        </a>
-        <a
-          href="https://polygon.technology/"
           target="_blank"
           rel="noopener noreferrer"
           className="place-self-center w-2/5 sm:w-1/5"

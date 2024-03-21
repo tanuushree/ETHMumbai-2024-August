@@ -4,10 +4,69 @@
   font-family: 'Herokid';
   src: url('./fonts/Herokid-Regular.otf') format('opentype');
 }
+@font-face {
+  font-family: 'Paper';
+  src: url('./fonts/paper.OTF') format('opentype');
+}
+
+/* Venue CSS */
+.venue-specifications{
+  display: flex;
+  flex-direction: column;
+}
+
+.venue-heading{
+  font-family: 'Paper',sans-serif;
+  font-size: 60px;
+  text-align: center;
+}
+
+.venue-image{
+  width:600px;
+  height:400px;
+  border-radius:20px;
+}
+@media (max-width: 396px) { 
+  .venue-image{
+    height: 50vw;
+  }
+}
+@media (max-width: 640px) and (min-width: 396px) {
+  .venue-image{
+    width: 600px;
+    
+  }
+}
+
+@media (min-width: 640px) and (max-width:1024px) {
+  .venue-specifications{
+    width: 50vw;
+    
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 800px) {
+  .venue-image{
+    width: 1000px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .venue-specifications{
+    flex-direction: column;
+  }
+  .venue-heading{
+    text-align: center;
+  }
+}
+
+
 
 #heading {
   font-family: 'Herokid', sans-serif;
 }
+
+
 /* *{
   font-family: 'Poppins', sans-serif;
 } */
@@ -60,12 +119,13 @@
   font-family: 'Herokid',sans-serif;
 }
 
-
 @media (orientation: portrait) {
   .everything-container h1{
     font-size: 7vw;
     line-height: 9vh;
   }
+
+  
 
   .everything-will-be-revealed-soon{
     margin-top: 40vw;
@@ -118,6 +178,7 @@
   }
 
 }
+
 
 @media (max-width: 396px) { 
   .build-from-mumbai{
