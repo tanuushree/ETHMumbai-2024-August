@@ -5,7 +5,8 @@ import logo3 from "../assets/sponsors/Core1.png";
 import logo4 from "../assets/Partners/EF-ESP-logo-white-text.png";
 import logo5 from "../assets/sponsors/Lumio.png";
 import logo6 from "../assets/Partners/4.png";
-
+import logo7 from "../assets/sponsors/Vara.png";
+import logo8 from "../assets/sponsors/The Graph.png";
 
 import SponsorText from "../assets/sponsors.png";
 
@@ -105,6 +106,24 @@ function Sponsors() {
           className="place-self-center w-2/5 sm:w-1/5"
         >
           <img src={logo6} alt="name" />
+        </a>
+        <a
+          href="https://vara.network/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="place-self-center w-2/5
+          sm:w-1/5"
+        >
+          <img src={logo7} alt="name" />
+        </a>
+        <a
+          href="https://thegraph.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="place-self-center w-2/5
+          sm:w-1/5"
+        >
+          <img src={logo8} alt="name" />
         </a>
       </div>
       <button
