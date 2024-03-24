@@ -5,7 +5,7 @@ import logo3 from "../assets/sponsors/Core1.png";
 import logo4 from "../assets/Partners/EF-ESP-logo-white-text.png";
 import logo5 from "../assets/sponsors/Lumio.png";
 import logo6 from "../assets/Partners/4.png";
-import logo7 from "../assets/sponsors/Vara.png";
+import logo7 from "../assets/sponsors/Vara-400(1).png";
 import logo8 from "../assets/sponsors/The Graph.png";
 
 import SponsorText from "../assets/sponsors.png";
