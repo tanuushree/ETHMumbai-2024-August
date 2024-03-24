@@ -42,10 +42,10 @@ const BountiesData = [
     url: "https://purple.construction/"
   },
   {
-    name: "PSELogo",
-    logo: PSELogo,
+    name: "Sacffold",
+    logo: Scaffold,
     amount: "$3K",
-    url: "https://pse.dev/"
+    url: "https://scaffoldeth.io/"
   },
   {
     name: "AnonAadharLogo",
@@ -58,7 +58,13 @@ const BountiesData = [
     logo: TheGraphLogo,
     amount: "$2K",
     url: "https://thegraph.com/"
-  }
+  },
+  {
+    name: "VaraNetwork",
+    logo: VaraNetwork,
+    amount: "$2K",
+    url: "https://vara.network/"
+  }  
 ]
 
 export default function Bounties() {
