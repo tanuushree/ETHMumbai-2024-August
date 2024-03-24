@@ -4,9 +4,10 @@ import AvailLogo from "../assets/bounties/Avail - $3K.png";
 import CoreLogo from "../assets/sponsors/Core1.png"
 import LumioLogo from "../assets/bounties/Lumio - $2K.png";
 import PurpleDAOLogo from "../assets/bounties/Purple DAO - $3K.png";
-import PSELogo from "../assets/bounties/PSE - $3K.png";
+import Scaffold from "../assets/bounties/Scaffold-ETH 2 - $3K.png";
 import AnonAadharLogo from "../assets/bounties/Anon Aadhar - $3K.png";
 import TheGraphLogo from '../assets/bounties/The Graph - $2K.png';
+import VaraNetwork from '../assets/bounties/Vara - $2K.png';
 
 import BountiesLogo from "../assets/bounties.png";
 
