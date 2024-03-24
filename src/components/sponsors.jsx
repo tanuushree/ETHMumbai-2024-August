@@ -50,6 +50,15 @@ function Sponsors() {
           <img src={logo2} alt="name" />
         </a>
         <a
+          href="https://coredao.org/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="place-self-center w-2/5
+          sm:w-1/5"
+        >
+          <img src={logo3} alt="name" />
+        </a>
+        <a
           href="https://vara.network/"
           target="_blank"
           rel="noopener noreferrer"
@@ -66,15 +75,6 @@ function Sponsors() {
           sm:w-1/5"
         >
           <img src={logo8} alt="name" />
-        </a>
-        <a
-          href="https://coredao.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="place-self-center w-2/5
-          sm:w-1/5"
-        >
-          <img src={logo3} alt="name" />
         </a>
         <a
           href="https://esp.ethereum.foundation/"
