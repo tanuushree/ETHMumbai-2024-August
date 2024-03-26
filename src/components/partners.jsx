@@ -67,6 +67,7 @@ function Partners() {
           sm:w-1/5"
         >
           <img src={logo5} alt="name" />
+        </a>
       </div>
     </div>
   );
