@@ -9,7 +9,7 @@ import AnonAadharLogo from "../assets/bounties/Anon Aadhar - $3K.png";
 import TheGraphLogo from '../assets/bounties/The Graph - $2K.png';
 import VaraNetwork from '../assets/bounties/Vara - $2K.png';
 import Polygon from '../assets/bounties/Polygon - $2.5K.png';
-import Fuel from '../assets/bounties/Fuel - 4Kv2.png';
+import Fuel from '../assets/bounties/Fuel - $4K.png';
 
 import BountiesLogo from "../assets/bounties.png";
 
@@ -91,17 +91,20 @@ export default function Bounties() {
       />
     <div className="bounties-list-wrapper justify-center flex flex-row flex-wrap sm:flex sm:flex-row m-2 sm:mt-4 gap-6 sm:gap-8 max-md:items-center">
       {BountiesData.map((bounty, index) => {
-        return <a href={bounty.url} target="_blank" rel="noreferrer" key={index} className="max-md:mx-auto max-md:w-fit">
-          <div className="flex flex-col items-center gap-6 max-md:gap-2">
-          <img
-            src={bounty.logo}
-            alt={bounty.name}
-            name={bounty.name}
-            className="h-[60px] w-auto max-md:h-[40px] max-md:w-fit"
-          />
-          <p className="font-medium text-lg text-white">{bounty.amount}</p>
-        </div>
-        </a>
+        const isFuel = bounty.name === "Fuel";
+        return (
+          <a href={bounty.url} target="_blank" rel="noreferrer" key={index} className="max-md:mx-auto max-md:w-fit">
+            <div className={`flex flex-col items-center gap-6 ${isFuel ? "max-md:gap-2" : ""}`}>
+              <img
+                src={bounty.logo}
+                alt={bounty.name}
+                name={bounty.name}
+                className={`h-[60px] w-auto max-md:h-[40px] max-md:w-fit ${isFuel ? "max-md:h-[30px] max-md:w-auto" : ""}`}
+              />
+              <p className="font-medium text-lg text-white">{bounty.amount}</p>
+            </div>
+          </a>
+        );
       })}
     </div>
   </div>
