@@ -67,12 +67,18 @@ function Sponsors() {
         >
           <img src={logo4} alt="name" />
         </a>
-
+      </div>
+      <div
+        className="invisible sm:visible sm:justify-center 
+      flex flex-row flex-wrap
+      justify-between h-0 sm:h-full
+       sm:flex sm:flex-row sm:m-2 gap-8"
+      >
         <a
           href="https://lumio.io/"
           target="_blank"
           rel="noopener noreferrer"
-          className="sm:hidden place-self-center w-2/5"
+          className="place-self-center w-2/5 sm:w-1/5"
         >
           <img src={logo5} alt="name" />
         </a>
@@ -80,7 +86,7 @@ function Sponsors() {
           href="https://purple.construction/"
           target="_blank"
           rel="noopener noreferrer"
-          className="sm:hidden place-self-center w-2/5"
+          className="place-self-center w-2/5 sm:w-1/5"
         >
           <img src={logo6} alt="name" />
         </a>
