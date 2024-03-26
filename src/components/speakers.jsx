@@ -27,14 +27,13 @@ function Speakers() {
     return(
         <div className="my-10 sm:my-20 flex flex-col justify-center">
             <p className="font-Herokid font-bold my-6 text-xl">Attend ETHMumbai with the Brightest of Minds.</p>
-            <div className="px-6 sm:p-2 gap-8 flex flex-row sm:flex-row flex-wrap justify-between">
+            <div className="px-6 sm:p-2 flex flex-row sm:flex-row flex-wrap justify-between">
                 <SpeakerComponent name="Harsh Ghodkar" imageUrl={mentor1} speakerCreds="Gateway Protocol" />
                 <SpeakerComponent name="Jatin Pandya" imageUrl={mentor2} speakerCreds="Zeeve" />
                 <SpeakerComponent name="Jayesh Bhole" imageUrl={mentor3} speakerCreds="Router Protocol" />
                 <SpeakerComponent name="Sneha Mishra" imageUrl={mentor4} speakerCreds="Social3" />
                 <SpeakerComponent name="Sumit Vekariya" imageUrl={mentor5} speakerCreds="Sacred Protocol" />
                 <SpeakerComponent name="Vanshika Rana" imageUrl={mentor6} speakerCreds="Instadapp" />
-
                 <SpeakerComponent name="Denver Dsouza" imageUrl={judge1} speakerCreds="Devfolio" />
                 <SpeakerComponent name="Gnana Lakshmi" imageUrl={judge2} speakerCreds="Starknet" />
                 <SpeakerComponent name="Harsh Bajpai" imageUrl={judge3} speakerCreds="Kakarot zkEVM" />
