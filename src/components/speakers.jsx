@@ -15,7 +15,13 @@ import judge7 from "../assets/judges/Sachin Mittal, 111 DAO.jpg";
 import judge8 from "../assets/judges/Sahil Sen, QuickNode.jpeg";
 import judge9 from "../assets/judges/Saravanan Vijayakumaran, IIT Bombay.jpg";
 import judge10 from "../assets/judges/Shantanu Vishwanadha, Powerloom.jpeg";
-
+import judge11 from "../assets/judges/Robin Roy, Avail.png";
+import speaker1 from "../assets/Speakers/Simone, UrbeETH.jpeg";
+import speaker2 from "../assets/Speakers/Pareen Lathia, BuidlersTribe.jpeg";
+import speaker3 from "../assets/Speakers/Jason Goldberg, Airstack.jpeg";
+import speaker4 from "../assets/Speakers/CyberShakti, Lenspost.png";
+import speaker5 from "../assets/Speakers/Benny G, ERC6551.jpeg";
+import speaker6 from "../assets/Speakers/Aditya Mohanty, The Product House.png";
 
 const starknet = ""
 const judgeName = starknet.split("\n");
@@ -38,12 +44,19 @@ function Speakers() {
                 <SpeakerComponent name="Gnana Lakshmi" imageUrl={judge2} speakerCreds="Starknet" />
                 <SpeakerComponent name="Harsh Bajpai" imageUrl={judge3} speakerCreds="Kakarot zkEVM" />
                 <SpeakerComponent name="Hidayath Shaik" imageUrl={judge4} speakerCreds=" Webhash" />
-                <SpeakerComponent name="Hitesh Malviya" imageUrl={judge5} speakerCreds="DYOR" />
                 <SpeakerComponent name="Preet Parekh" imageUrl={judge6} speakerCreds="Devfolio" />
                 <SpeakerComponent name="Sachin Mittal" imageUrl={judge7} speakerCreds="111 DAO" />
                 <SpeakerComponent name="Sahil Sen" imageUrl={judge8} speakerCreds="QuickNode" />
                 <SpeakerComponent name="Saravanan" imageUrl={judge9} speakerCreds="IIT Bombay" />
                 <SpeakerComponent name="Shantanu" imageUrl={judge10} speakerCreds="Powerloom" />
+                <SpeakerComponent name="Robin Roy" imageUrl={judge11} speakerCreds="Avail" />
+                <SpeakerComponent name="Hitesh Malviya" imageUrl={judge5} speakerCreds="DYOR" />
+                <SpeakerComponent name="Simone" imageUrl={speaker1} speakerCreds="UrbeETH" />
+                <SpeakerComponent name="Pareen Lathia" imageUrl={speaker2} speakerCreds="BuidlersTribe" />
+                <SpeakerComponent name="Jason Goldberg" imageUrl={speaker3} speakerCreds="Airstack" />
+                <SpeakerComponent name="CyberShakti" imageUrl={speaker4} speakerCreds="Lenspost" />
+                <SpeakerComponent name="Benny G" imageUrl={speaker5} speakerCreds="ERC6551" />
+                <SpeakerComponent name="Aditya Mohanty" imageUrl={speaker6} speakerCreds="The Product House" />                
             </div>
         </div>
     )
