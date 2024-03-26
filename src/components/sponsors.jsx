@@ -69,7 +69,7 @@ function Sponsors() {
         </a>
       </div>
       <div
-        className="invisible sm:visible sm:justify-center 
+        className="sm:justify-center 
       flex flex-row flex-wrap
       justify-between h-0 sm:h-full
        sm:flex sm:flex-row sm:m-2 gap-8"
