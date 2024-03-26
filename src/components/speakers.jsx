@@ -27,7 +27,7 @@ function Speakers() {
     return(
         <div className="my-10 sm:my-20 flex flex-col justify-center">
             <p className="font-Herokid font-bold my-6 text-xl">Attend ETHMumbai with the Brightest of Minds.</p>
-            <div className="px-6 sm:p-2 flex flex-row sm:flex-row flex-wrap justify-between">
+            <div className="px-6 sm:p-2 gap-8 flex flex-row sm:flex-row flex-wrap justify-center">
                 <SpeakerComponent name="Harsh Ghodkar" imageUrl={mentor1} speakerCreds="Gateway Protocol" />
                 <SpeakerComponent name="Jatin Pandya" imageUrl={mentor2} speakerCreds="Zeeve" />
                 <SpeakerComponent name="Jayesh Bhole" imageUrl={mentor3} speakerCreds="Router Protocol" />
