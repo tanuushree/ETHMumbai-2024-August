@@ -59,15 +59,6 @@ function Sponsors() {
           <img src={logo3} alt="name" />
         </a>
         <a
-          href="https://thegraph.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="place-self-center w-2/5
-          sm:w-1/5"
-        >
-          <img src={logo8} alt="name" />
-        </a>
-        <a
           href="https://esp.ethereum.foundation/"
           target="_blank"
           rel="noopener noreferrer"
@@ -86,6 +77,14 @@ function Sponsors() {
           <img src={logo5} alt="name" />
         </a>
         <a
+          href="https://purple.construction/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="sm:hidden place-self-center w-2/5"
+        >
+          <img src={logo6} alt="name" />
+        </a>
+        <a
           href="https://vara.network/"
           target="_blank"
           rel="noopener noreferrer"
@@ -95,37 +94,14 @@ function Sponsors() {
           <img src={logo7} alt="name" />
         </a>
         <a
-          href="https://purple.construction/"
+          href="https://thegraph.com/"
           target="_blank"
           rel="noopener noreferrer"
-          className="sm:hidden place-self-center w-2/5"
+          className="place-self-center w-2/5
+          sm:w-1/5"
         >
-          <img src={logo6} alt="name" />
+          <img src={logo8} alt="name" />
         </a>
-      </div>
-      <div
-        className="invisible sm:visible sm:justify-center 
-      flex flex-row flex-wrap
-      justify-between h-0 sm:h-full
-       sm:flex sm:flex-row sm:m-2 gap-8"
-      >
-        <a
-          href="https://lumio.io/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="place-self-center w-2/5 sm:w-1/5"
-        >
-          <img src={logo5} alt="name" />
-        </a>
-        <a
-          href="https://purple.construction/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="place-self-center w-2/5 sm:w-1/5"
-        >
-          <img src={logo6} alt="name" />
-        </a>
-        
       </div>
       <button
         className="color-peachy p-2 sm:px-4
