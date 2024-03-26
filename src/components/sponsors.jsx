@@ -7,6 +7,8 @@ import logo5 from "../assets/sponsors/Lumio.png";
 import logo6 from "../assets/Partners/4.png";
 import logo7 from "../assets/sponsors/Vara-final.png";
 import logo8 from "../assets/sponsors/The Graph.png";
+import logo9 from "../assets/sponsors/Polygon.png";
+import logo10 from "../assets/sponsors/Fuel.png";
 
 import SponsorText from "../assets/sponsors.png";
 
@@ -94,6 +96,22 @@ function Sponsors() {
           className="place-self-center w-2/5 sm:w-1/5"
         >
           <img src={logo8} alt="The Graph" />
+        </a>
+        <a
+          href="https://polygon.technology/polygon-zkevm"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="place-self-center w-2/5 sm:w-1/5"
+        >
+          <img src={logo9} alt="Polygon" />
+        </a>
+        <a
+          href="https://fuel.network/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="place-self-center w-2/5 sm:w-1/5"
+        >
+          <img src={logo10} alt="Fuel" />
         </a>
       </div>
       <button
