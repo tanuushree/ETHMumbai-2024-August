@@ -3,6 +3,7 @@ import logo1 from "../assets/Partners/deform.png";
 import logo2 from "../assets/Partners/streameth.png";
 import logo3 from "../assets/Partners/moongate_logo.png";
 import logo4 from '../assets/Partners/solidityscan.png';
+import logo5 from '../assets/Partners/dabl club.png';
 
 import PartnersLogo from "../assets/partners.png";
 
@@ -58,6 +59,14 @@ function Partners() {
         >
           <img src={logo4} alt="name" />
         </a>
+        <a
+          href="https://www.dabl.club/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="place-self-center w-2/5
+          sm:w-1/5"
+        >
+          <img src={logo5} alt="name" />
       </div>
     </div>
   );
