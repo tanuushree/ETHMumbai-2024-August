@@ -91,20 +91,17 @@ export default function Bounties() {
       />
     <div className="bounties-list-wrapper justify-center flex flex-row flex-wrap sm:flex sm:flex-row m-2 sm:mt-4 gap-6 sm:gap-8 max-md:items-center">
       {BountiesData.map((bounty, index) => {
-        const isFuel = bounty.name === "Fuel";
-        return (
-          <a href={bounty.url} target="_blank" rel="noreferrer" key={index} className="max-md:mx-auto max-md:w-fit">
-            <div className={`flex flex-col items-center gap-6 ${isFuel ? "max-md:gap-2" : ""}`}>
-              <img
-                src={bounty.logo}
-                alt={bounty.name}
-                name={bounty.name}
-                className={`h-[60px] w-auto max-md:h-[40px] max-md:w-fit ${isFuel ? "max-md:h-[30px] max-md:w-auto" : ""}`}
-              />
-              <p className="font-medium text-lg text-white">{bounty.amount}</p>
-            </div>
-          </a>
-        );
+        return <a href={bounty.url} target="_blank" rel="noreferrer" key={index} className="max-md:mx-auto max-md:w-fit">
+          <div className="flex flex-col items-center gap-6 max-md:gap-2">
+          <img
+            src={bounty.logo}
+            alt={bounty.name}
+            name={bounty.name}
+            className="h-[60px] w-auto max-md:h-[40px] max-md:w-fit"
+          />
+          <p className="font-medium text-lg text-white">{bounty.amount}</p>
+        </div>
+        </a>
       })}
     </div>
   </div>
