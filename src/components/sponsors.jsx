@@ -35,52 +35,41 @@ function Sponsors() {
           href="https://arweavehub.com/"
           target="_blank"
           rel="noopener noreferrer"
-          className="place-self-center w-2/5
-           sm:w-1/5"
+          className="place-self-center w-2/5 sm:w-1/5"
         >
-          <img src={logo1} alt="name" />
+          <img src={logo1} alt="Arweave India" />
         </a>
         <a
           href="https://www.availproject.org/"
           target="_blank"
           rel="noopener noreferrer"
-          className="place-self-center w-2/5
-          sm:w-1/5"
+          className="place-self-center w-2/5 sm:w-1/5"
         >
-          <img src={logo2} alt="name" />
+          <img src={logo2} alt="Avail" />
         </a>
         <a
           href="https://coredao.org/"
           target="_blank"
           rel="noopener noreferrer"
-          className="place-self-center w-2/5
-          sm:w-1/5"
+          className="place-self-center w-2/5 sm:w-1/5"
         >
-          <img src={logo3} alt="name" />
+          <img src={logo3} alt="Core1" />
         </a>
         <a
           href="https://esp.ethereum.foundation/"
           target="_blank"
           rel="noopener noreferrer"
-          className="place-self-center w-2/5
-          sm:w-1/5"
+          className="place-self-center w-2/5 sm:w-1/5"
         >
-          <img src={logo4} alt="name" />
+          <img src={logo4} alt="EF-ESP" />
         </a>
-      </div>
-      <div
-        className="sm:justify-center 
-      flex flex-row flex-wrap
-      justify-between h-0 sm:h-full
-       sm:flex sm:flex-row sm:m-2 gap-8"
-      >
         <a
           href="https://lumio.io/"
           target="_blank"
           rel="noopener noreferrer"
           className="place-self-center w-2/5 sm:w-1/5"
         >
-          <img src={logo5} alt="name" />
+          <img src={logo5} alt="Lumio" />
         </a>
         <a
           href="https://purple.construction/"
@@ -88,27 +77,26 @@ function Sponsors() {
           rel="noopener noreferrer"
           className="place-self-center w-2/5 sm:w-1/5"
         >
-          <img src={logo6} alt="name" />
+          <img src={logo6} alt="4" />
         </a>
         <a
           href="https://vara.network/"
           target="_blank"
           rel="noopener noreferrer"
-          className="place-self-center w-2/5
-          sm:w-1/5"
+          className="place-self-center w-2/5 sm:w-1/5"
         >
-          <img src={logo7} alt="name" />
+          <img src={logo7} alt="Vara" />
         </a>
         <a
           href="https://thegraph.com/"
           target="_blank"
           rel="noopener noreferrer"
-          className="place-self-center w-2/5
-          sm:w-1/5"
+          className="place-self-center w-2/5 sm:w-1/5"
         >
-          <img src={logo8} alt="name" />
+          <img src={logo8} alt="The Graph" />
         </a>
-        <button
+      </div>
+      <button
         className="color-peachy p-2 sm:px-4
       text-xs sm:text-md sm:mt-4 sm:text-xl
       rounded-full shadow-md text-color-moldy 
@@ -117,7 +105,6 @@ function Sponsors() {
       >
         Become a Sponsor
       </button>
-      </div>
     </div>
   );
 }
