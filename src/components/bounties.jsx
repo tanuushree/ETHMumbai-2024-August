@@ -8,6 +8,8 @@ import Scaffold from "../assets/bounties/Scaffold-ETH 2 - $3K.png";
 import AnonAadharLogo from "../assets/bounties/Anon Aadhar - $3K.png";
 import TheGraphLogo from '../assets/bounties/The Graph - $2K.png';
 import VaraNetwork from '../assets/bounties/Vara - $2K.png';
+import Polygon from '../assets/bounties/Polygon - $2.5K.png';
+import Fuel from '../assets/bounties/Fuel - $4K.png';
 
 import BountiesLogo from "../assets/bounties.png";
 
@@ -65,7 +67,19 @@ const BountiesData = [
     logo: VaraNetwork,
     amount: "$2K",
     url: "https://vara.network/"
-  }  
+  },
+  {
+    name: "Polygon",
+    logo: Polygon,
+    amount: "$2K",
+    url: "https://polygon.technology/polygon-zkevm"
+  },
+  {
+    name: "Fuel",
+    logo: Fuel,
+    amount: "$2K",
+    url: "https://fuel.network/"
+  } 
 ]
 
 export default function Bounties() {
