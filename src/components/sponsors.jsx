@@ -108,8 +108,7 @@ function Sponsors() {
         >
           <img src={logo8} alt="name" />
         </a>
-      </div>
-      <button
+        <button
         className="color-peachy p-2 sm:px-4
       text-xs sm:text-md sm:mt-4 sm:text-xl
       rounded-full shadow-md text-color-moldy 
@@ -118,6 +117,7 @@ function Sponsors() {
       >
         Become a Sponsor
       </button>
+      </div>
     </div>
   );
 }
