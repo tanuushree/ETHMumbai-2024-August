@@ -39,7 +39,7 @@ function Speakers() {
                 <SpeakerComponent name="Harsh Bajpai" imageUrl={judge3} speakerCreds="Kakarot zkEVM" />
                 <SpeakerComponent name="Hidayath Shaik" imageUrl={judge4} speakerCreds="Webhash" />
                 <SpeakerComponent name="Preet Parekh" imageUrl={judge6} speakerCreds="Devfolio" />
-                <SpeakerComponent name="Sachin Mittal" imageUrl={judge7} speakerCreds="111 DAO" />
+                <SpeakerComponent name="Sachin Mittal" imageUrl={judge7} speakerCreds="Gitcoin Kernel" />
                 <SpeakerComponent name="Sahil Sen" imageUrl={judge8} speakerCreds="QuickNode" />
                 <SpeakerComponent name="Saravanan" imageUrl={judge9} speakerCreds="IIT Bombay" />
                 <SpeakerComponent name="Shantanu" imageUrl={judge10} speakerCreds="Powerloom" />
