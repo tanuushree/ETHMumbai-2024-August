@@ -2,7 +2,8 @@ import React from "react";
 
 function VideoEmbed() {
 
-    const videoLink = "https://firebasestorage.googleapis.com/v0/b/pixifie-2f67b.appspot.com/o/do-not-delete%2Feth%20mumbai%202%20_%20consistent%20font.mp4?alt=media&token=3a7f8616-4b25-4d3e-80c3-34923a039cee";
+    // const videoLink = "https://firebasestorage.googleapis.com/v0/b/pixifie-2f67b.appspot.com/o/do-not-delete%2Feth%20mumbai%202%20_%20consistent%20font.mp4?alt=media&token=3a7f8616-4b25-4d3e-80c3-34923a039cee";
+    const videoLink = "https://res.cloudinary.com/dop6odpg6/video/upload/v1753891858/eth-mumbai_b0esy8.mp4";
 
     return(
         <div className="min-w-full bg-rose-600 

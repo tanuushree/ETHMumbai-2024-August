@@ -59,12 +59,12 @@ function Apply() {
       </p> */}
 
       {/* TODO: Add later */}
-      <button style={{cursor:'pointer'}}
+      {/* <button style={{cursor:'pointer'}}
             onClick={() => { window.open('https://ethmumbai.devfolio.co/', '_blank');}}
             className="m-2 sm:m-4 px-4 py-1 sm:px-10 sm:py-2 mb-8 rounded-full 
             shadow-md hover:shadow-xl font-bold
             flex-1 self-center main-apply-btn sm:text-xl">
-            Apply with Devfolio</button>
+            Apply with Devfolio</button> */}
     </div>
   );
 }

@@ -114,7 +114,7 @@ function Sponsors() {
           <img src={logo10} alt="Fuel" />
         </a>
       </div>
-      <button
+      {/* <button
         className="color-peachy p-2 sm:px-4
       text-xs sm:text-md sm:mt-4 sm:text-xl
       rounded-full shadow-md text-color-moldy 
@@ -122,7 +122,7 @@ function Sponsors() {
         onClick={handleButtonClick}
       >
         Become a Sponsor
-      </button>
+      </button> */}
     </div>
   );
 }
