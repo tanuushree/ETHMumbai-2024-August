@@ -15,6 +15,7 @@ import WebFooter from "../components/webFooter";
 import Bounties from "../components/bounties";
 import Partners from "../components/partners";
 import Venue from "../components/venue";
+import Metrics from "../components/metrics";
 
 function Website() {
   return (
@@ -28,6 +29,7 @@ function Website() {
 		</div>
         <Apply />
         <VideoEmbed />
+        <Metrics />
         <Sponsors />
         <Bounties />
         <Partners />
