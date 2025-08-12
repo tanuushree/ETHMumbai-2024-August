@@ -89,9 +89,9 @@ function BottomBox() {
       </div>
 
       <div className="text-center flex flew-row justify-center items-center">
-        <div className="z-10 absolute">
+        {/* <div className="z-10 absolute">
           <Socials />
-        </div>
+        </div> */}
         <img src={train} alt="ETH-Mumbai" className="w-full" />
       </div>
     </div>
